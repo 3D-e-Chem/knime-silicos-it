@@ -2,16 +2,16 @@
 <feature
       id="nl.esciencecenter.e3dchem.knime.silicosit.feature"
       label="nl.esciencecenter.e3dchem.knime.silicosit Feature"
-      version="1.0.qualifier"
+      version="1.0.0.qualifier"
       provider-name="[Enter provider name here.]">
 
-  <description url="https://github.com/3D-e-Chem/knime-silicos-it">
-     [Enter Feature Description here.]
-  </description>
+   <description url="https://github.com/3D-e-Chem/knime-silicos-it">
+      [Enter Feature Description here.]
+   </description>
 
-  <copyright url="http://www.example.com/copyright">
-     [Enter Copyright Description here.]
-  </copyright>
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
 
    <license url="https://www.apache.org/licenses/LICENSE-2.0.txt">
       Apache License

@@ -24,7 +24,7 @@ public class PharmacophoreReaderFactory
      */
     @Override
     public int getNrNodeViews() {
-        return 1;
+        return 0;
     }
 
     /**
@@ -33,7 +33,7 @@ public class PharmacophoreReaderFactory
     @Override
     public NodeView<PharmacophoreReaderModel> createNodeView(final int viewIndex,
             final PharmacophoreReaderModel nodeModel) {
-        return new PharmacophoreReaderView(nodeModel);
+        return null;
     }
 
     /**

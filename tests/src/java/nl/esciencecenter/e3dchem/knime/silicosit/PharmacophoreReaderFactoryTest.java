@@ -4,8 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory;
-
 public class PharmacophoreReaderFactoryTest {
 	
 	@Test

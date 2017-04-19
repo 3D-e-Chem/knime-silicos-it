@@ -1,8 +1,10 @@
 package nl.esciencecenter.e3dchem.knime.silicosit;
 
+import javax.swing.JFileChooser;
+
 import org.knime.core.node.defaultnodesettings.DefaultNodeSettingsPane;
-import org.knime.core.node.defaultnodesettings.DialogComponentNumber;
-import org.knime.core.node.defaultnodesettings.SettingsModelIntegerBounded;
+import org.knime.core.node.defaultnodesettings.DialogComponentFileChooser;
+import org.knime.core.node.defaultnodesettings.SettingsModelString;
 
 /**
  * <code>NodeDialog</code> for the "PharmacophoreReader" Node.
@@ -13,7 +15,6 @@ import org.knime.core.node.defaultnodesettings.SettingsModelIntegerBounded;
  * {@link org.knime.core.node.NodeDialogPane}.
  */
 public class PharmacophoreReaderDialog extends DefaultNodeSettingsPane {
-
     /**
      * New pane for configuring PharmacophoreReader node dialog.
      * This is just a suggestion to demonstrate possible default dialog
@@ -22,12 +23,11 @@ public class PharmacophoreReaderDialog extends DefaultNodeSettingsPane {
     protected PharmacophoreReaderDialog() {
         super();
 
-        addDialogComponent(new DialogComponentNumber(
-                new SettingsModelIntegerBounded(
-                    PharmacophoreReaderModel.CFGKEY_COUNT,
-                    PharmacophoreReaderModel.DEFAULT_COUNT,
-                    Integer.MIN_VALUE, Integer.MAX_VALUE),
-                    "Counter:", /*step*/ 1, /*componentwidth*/ 5));
+        addDialogComponent(new DialogComponentFileChooser(
+                new SettingsModelString(
+                    PharmacophoreReaderModel.CFGKEY_FILENAME, null
+                 ), "silicosit_phar_read", JFileChooser.OPEN_DIALOG, ".phar"
+        ));
 
     }
 }

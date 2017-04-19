@@ -1,0 +1,30 @@
+# To trigger a Travis-CI build for every GitHub push or Pull Request:
+# 1. Goto https://travis-ci.org/profile/3D-e-Chem
+# 2. Flip the switch for the `knime-silicos-it` repo
+sudo: false
+language: java
+matrix:
+ include:
+ - os: linux
+   jdk: oraclejdk8
+   script: xvfb-run mvn verify -B
+ - os: osx
+   osx_image: xcode8.2
+   script: Xvfb :5009 & export DISPLAY=:5009 && mvn verify -B
+before_install:
+  - if [ "$TRAVIS_OS_NAME" == "osx" ]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+cache:
+  directories:
+   - $HOME/.m2
+   - $HOME/jpm
+install: mvn package -B
+# Uncomment below to upload coverage to Codacy (https://www.codacy.com),
+# Next steps to integrate coverage:
+# 1. Register repo as project on Codacy website
+# 2. Add CODACY_PROJECT_TOKEN env var to Travis-CI settings, token can be found in Codacy project settings
+# 3. Push a change to GitHub to trigger a Travis-CI build and Codacy analysis
+# 3. Add coverage badge to README.md, badge snippet can be found in Codacy project settings
+#after_success:
+#- curl -sL https://github.com/jpm4j/jpm4j.installers/raw/master/dist/biz.aQute.jpm.run.jar > ~/.m2/jpm4j.jar
+#- java -jar $HOME/.m2/jpm4j.jar -u install com.codacy:codacy-coverage-reporter:assembly
+#- $HOME/jpm/bin/codacy-coverage-reporter -l Java -r tests/target/jacoco/report/jacoco.xml

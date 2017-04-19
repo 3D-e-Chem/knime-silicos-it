@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: [Enter Your Node name here here.]
+Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.silicosit.plugin;singleton:=true
+Bundle-Version: 1.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Activator: nl.esciencecenter.e3dchem.knime.silicosit.Activator
+Bundle-Vendor: [Enter Your Company here.]
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core;bundle-version="[3.3.0,4.0.0)",
+ org.knime.workbench.repository;bundle-version="[3.3.0,4.0.0)",
+ org.knime.base;bundle-version="[3.3.0,4.0.0)",
+ nl.esciencecenter.e3dchem.plugin
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Export-Package: nl.esciencecenter.e3dchem.knime.silicosit

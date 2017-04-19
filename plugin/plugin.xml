@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+      <extension
+         point="org.knime.workbench.repository.categories">
+      <category
+            description="Category containing my nodes"
+            icon="nl/esciencecenter/e3dchem/knime/silicosit/default.png"
+            level-id="PharmacophoreReader"
+            name="PharmacophoreReader"
+            path="/community/3d-e-chem"/>
+   </extension>
+
+    <extension point="org.knime.workbench.repository.nodes">
+        <node category-path="/community/3d-e-chem/PharmacophoreReader" factory-class="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory" id="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory"/>
+    </extension>
+
+</plugin>

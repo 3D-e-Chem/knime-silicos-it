@@ -16,7 +16,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_10422/knime_tc_czkcflgrz3a9/aligned.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_73092/knime_tc_nkcr23olajik/aligned.sdf"/>
 </config>
 </config>
 </config>
@@ -37,7 +37,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_10422/knime_tc_czkcflgrz3a9/db.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_73092/knime_tc_nkcr23olajik/db.sdf"/>
 </config>
 </config>
 </config>
@@ -58,7 +58,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_10422/knime_tc_czkcflgrz3a9/reference.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_shape_it_align_73092/knime_tc_nkcr23olajik/reference.sdf"/>
 </config>
 </config>
 </config>

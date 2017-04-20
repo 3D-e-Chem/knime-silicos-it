@@ -16,7 +16,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10261/knime_tc_rcefv7bm7gju/output_pass.tsv"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_strip_it_exampl73102/knime_tc_psdbhgfmamks/output_pass.tsv"/>
 </config>
 </config>
 </config>
@@ -37,7 +37,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10261/knime_tc_rcefv7bm7gju/input.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_strip_it_exampl73102/knime_tc_psdbhgfmamks/input.sdf"/>
 </config>
 </config>
 </config>

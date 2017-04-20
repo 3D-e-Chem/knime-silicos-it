@@ -16,7 +16,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10316/knime_tc_zidpa76fgiw8/output.phar"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_align_it_pharma73023/knime_tc_uh9ijakvuzgg/output.phar"/>
 </config>
 </config>
 </config>
@@ -37,7 +37,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10316/knime_tc_zidpa76fgiw8/input.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_align_it_pharma73023/knime_tc_uh9ijakvuzgg/input.sdf"/>
 </config>
 </config>
 </config>

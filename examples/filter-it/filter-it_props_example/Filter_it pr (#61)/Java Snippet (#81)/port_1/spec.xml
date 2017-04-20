@@ -16,7 +16,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10296/knime_tc_odbhasafcuin/output_props.tsv"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_filter_it_props73069/knime_tc_uyfm9qt4ymfe/output_props.tsv"/>
 </config>
 </config>
 </config>
@@ -37,7 +37,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10296/knime_tc_odbhasafcuin/filter.sieve"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_filter_it_props73069/knime_tc_uyfm9qt4ymfe/filter.sieve"/>
 </config>
 </config>
 </config>
@@ -58,7 +58,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10296/knime_tc_odbhasafcuin/input.sdf"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_filter_it_props73069/knime_tc_uyfm9qt4ymfe/input.sdf"/>
 </config>
 </config>
 </config>
@@ -79,7 +79,7 @@
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="/tmp/knime_Workflow Manage10296/knime_tc_odbhasafcuin"/>
+<entry key="StringCell" type="xstring" value="/tmp/knime_filter_it_props73069/knime_tc_uyfm9qt4ymfe"/>
 </config>
 </config>
 </config>

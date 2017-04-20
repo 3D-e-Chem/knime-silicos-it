@@ -30,7 +30,7 @@ import org.knime.core.node.defaultnodesettings.SettingsModelString;
  */
 public class PharmacophoreReaderModel extends NodeModel {
 	public static final String CFGKEY_FILENAME = "phar_filename";
-	private static final DataColumnSpecCreator CREATOR = new DataColumnSpecCreator("Molecule", StringCell.TYPE);
+	private static final DataColumnSpecCreator CREATOR = new DataColumnSpecCreator("Pharmacophore", StringCell.TYPE);
 	private static final DataTableSpec SPEC = new DataTableSpec(CREATOR.createSpec());
 
 	private final SettingsModelString phar_filename = new SettingsModelString(CFGKEY_FILENAME, null);

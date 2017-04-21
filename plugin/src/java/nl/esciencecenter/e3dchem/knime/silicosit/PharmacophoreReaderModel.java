@@ -4,7 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import org.knime.core.data.DataColumnSpecCreator;
 import org.knime.core.data.DataRow;
@@ -23,6 +26,7 @@ import org.knime.core.node.NodeModel;
 import org.knime.core.node.NodeSettingsRO;
 import org.knime.core.node.NodeSettingsWO;
 import org.knime.core.node.defaultnodesettings.SettingsModelString;
+import org.knime.core.util.FileUtil;
 
 /**
  * This is the model implementation of PharmacophoreReader.
@@ -51,7 +55,14 @@ public class PharmacophoreReaderModel extends NodeModel {
 
 		BufferedDataContainer container = exec.createDataContainer(SPEC);
 
-		FileInputStream inStream = new FileInputStream(phar_filename.getStringValue());
+		String filename = phar_filename.getStringValue();
+		InputStream inStream;
+		try {
+			inStream = new URL(filename).openStream();
+		} catch (MalformedURLException e) {
+			inStream = new FileInputStream(filename);
+		}
+
 		BufferedReader in = new BufferedReader(new InputStreamReader(inStream));
 		String line;
 		StringBuilder buf = new StringBuilder(4096);
@@ -93,19 +104,30 @@ public class PharmacophoreReaderModel extends NodeModel {
 	@Override
 	protected DataTableSpec[] configure(final DataTableSpec[] inSpecs) throws InvalidSettingsException {
 
-		if (phar_filename.getStringValue() == null) {
-			throw new InvalidSettingsException("No phar file specified");
+		String filename = phar_filename.getStringValue();
+		if (filename == null) {
+			throw new InvalidSettingsException("No *.phar file specified");
 		}
 
-		File f = new File(phar_filename.getStringValue());
+		try {
+			URL url = new URL(filename);
+			if ("file".equals(url.getProtocol())) {
+				checkFile(FileUtil.getFileFromURL(url));
+			}
+		} catch (MalformedURLException e) {
+			checkFile(new File(filename));
+		}
+
+		return new DataTableSpec[] { SPEC };
+	}
+
+	private void checkFile(File f) throws InvalidSettingsException {
 		if (!f.exists()) {
-			throw new InvalidSettingsException("phar file '" + f.getAbsolutePath() + "' does not exist.");
+			throw new InvalidSettingsException("File '" + f.getAbsolutePath() + "' does not exist.");
 		}
 		if (!f.isFile()) {
 			throw new InvalidSettingsException("The path '" + f.getAbsolutePath() + "' is not a file.");
 		}
-
-		return new DataTableSpec[] { SPEC };
 	}
 
 	/**
@@ -140,15 +162,24 @@ public class PharmacophoreReaderModel extends NodeModel {
 	@Override
 	protected void loadInternals(File nodeInternDir, ExecutionMonitor exec)
 			throws IOException, CanceledExecutionException {
-		if (phar_filename.getStringValue() == null) {
+		String filename = phar_filename.getStringValue();
+		if (filename == null) {
 			return;
 		}
-		File f = new File(phar_filename.getStringValue());
-		if (!f.exists()) {
-			setWarningMessage("phar file '" + f.getAbsolutePath() + "' does not exist.");
-		}
-		if (!f.isFile()) {
-			setWarningMessage("The path '" + f.getAbsolutePath() + "' is not a file.");
+
+		try {
+			URL url = new URL(filename);
+			if ("file".equals(url.getProtocol())) {
+				checkFile(FileUtil.getFileFromURL(url));
+			}
+		} catch (MalformedURLException e) {
+			try {
+				checkFile(new File(filename));
+			} catch (InvalidSettingsException e1) {
+				setWarningMessage(e.getMessage());
+			}
+		} catch (InvalidSettingsException e) {
+			setWarningMessage(e.getMessage());
 		}
 	}
 

@@ -154,6 +154,4 @@
 		<module>p2</module>
 		<module>tests</module>
 	</modules>
-	<name>3D-e-Chem</name>
-	<url>https://3d-e-chem.github.io/</url>
 </project>

@@ -7,7 +7,7 @@
 </config>
 <config key="model">
 <config key="columnConfig_Pharmacophore">
-<entry key="checkerFactory" type="xstring" value="org.knime.testing.internal.diffcheckers.EqualityChecker$Factory"/>
+<entry key="checkerFactory" type="xstring" value="org.knime.testing.internal.diffcheckers.StringChecker$Factory"/>
 <config key="internals">
 <config key="ignoreColumnProperties_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
@@ -24,6 +24,11 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="ignoreDomain" type="xboolean" value="false"/>
+<config key="ignoreLinefeeds_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="ignoreLinefeeds" type="xboolean" value="true"/>
 </config>
 </config>
 <entry key="ignoreRowIds" type="xboolean" value="false"/>

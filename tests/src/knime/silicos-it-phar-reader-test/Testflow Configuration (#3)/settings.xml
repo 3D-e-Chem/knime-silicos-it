@@ -17,13 +17,10 @@
 <entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="failingNodes">
-<entry key="array-size" type="xint" value="1"/>
-<entry key="0" type="xstring" value="7"/>
+<entry key="array-size" type="xint" value="0"/>
 </config>
 <config key="requiredNodeWarnings">
-<entry key="nodeID_0" type="xstring" value="7"/>
-<entry key="message_0" type="xstring" value="No row filter specified"/>
-<entry key="count" type="xint" value="1"/>
+<entry key="count" type="xint" value="0"/>
 </config>
 <config key="requiredNodeErrors">
 <entry key="count" type="xint" value="0"/>
@@ -33,26 +30,28 @@
 <config key="usedJanitors">
 <entry key="array-size" type="xint" value="0"/>
 </config>
+<entry key="streamingTest" type="xboolean" value="false"/>
+<entry key="requiredLoadVersion" type="xstring" value="&lt;future&gt;"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <entry key="factory" type="xstring" value="org.knime.testing.node.config.TestConfigNodeFactory"/>
 <entry key="node-name" type="xstring" value="Testflow Configuration"/>
 <entry key="node-bundle-name" type="xstring" value="Test-Node extension for KNIME Workbench"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.testing"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="3.1.2.v201603311002"/>
+<entry key="node-bundle-version" type="xstring" value="3.3.2.v201703230956"/>
 <entry key="node-feature-name" type="xstring" value="KNIME Testing Framework"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.testingapplication.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-feature-version" type="xstring" value="3.1.2.v201603311002"/>
+<entry key="node-feature-version" type="xstring" value="3.3.2.v201703230956"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Testflow Configuration"/>
-<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="05187715-4005-4971-a915-cc0cd9b602b1"/>
 </config>
 </config>

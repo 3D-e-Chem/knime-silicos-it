@@ -12,6 +12,6 @@ public class PharmacophoreReaderFactoryTest {
 		
 		int nrviews = factory.getNrNodeViews();
 		
-		assertEquals(1, nrviews);
+		assertEquals(0, nrviews);
 	}
 }

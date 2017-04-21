@@ -33,7 +33,7 @@ public class PharmacophoreReaderWorkflowTest {
     @Test
     public void test_simple() throws IOException, InvalidSettingsException, CanceledExecutionException,
             UnsupportedWorkflowVersionException, LockFailedException, InterruptedException {
-        File workflowDir = new File("src/knime/simple-test");
+        File workflowDir = new File("src/knime/silicos-it-phar-reader-test");
         runner.runTestWorkflow(workflowDir);
     }
 }

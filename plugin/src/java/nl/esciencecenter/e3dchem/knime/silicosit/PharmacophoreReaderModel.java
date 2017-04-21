@@ -37,7 +37,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	private static final DataColumnSpecCreator CREATOR = new DataColumnSpecCreator("Pharmacophore", StringCell.TYPE);
 	private static final DataTableSpec SPEC = new DataTableSpec(CREATOR.createSpec());
 
-	private final SettingsModelString phar_filename = new SettingsModelString(CFGKEY_FILENAME, null);
+	private final SettingsModelString pharFilename = new SettingsModelString(CFGKEY_FILENAME, null);
 
 	/**
 	 * Constructor for the node model.
@@ -55,7 +55,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 
 		BufferedDataContainer container = exec.createDataContainer(SPEC);
 
-		String filename = phar_filename.getStringValue();
+		String filename = pharFilename.getStringValue();
 		InputStream inStream;
 		try {
 			inStream = new URL(filename).openStream();
@@ -87,7 +87,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 		}
 
 		// once we are done, we close the container and return its table
-		in.close();
+		inStream.close();
 		container.close();
 		BufferedDataTable out = container.getTable();
 		return new BufferedDataTable[] { out };
@@ -104,7 +104,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	@Override
 	protected DataTableSpec[] configure(final DataTableSpec[] inSpecs) throws InvalidSettingsException {
 
-		String filename = phar_filename.getStringValue();
+		String filename = pharFilename.getStringValue();
 		if (filename == null) {
 			throw new InvalidSettingsException("No *.phar file specified");
 		}
@@ -135,7 +135,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	 */
 	@Override
 	protected void saveSettingsTo(final NodeSettingsWO settings) {
-		phar_filename.saveSettingsTo(settings);
+		pharFilename.saveSettingsTo(settings);
 
 	}
 
@@ -144,7 +144,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	 */
 	@Override
 	protected void loadValidatedSettingsFrom(final NodeSettingsRO settings) throws InvalidSettingsException {
-		phar_filename.loadSettingsFrom(settings);
+		pharFilename.loadSettingsFrom(settings);
 
 	}
 
@@ -153,7 +153,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	 */
 	@Override
 	protected void validateSettings(final NodeSettingsRO settings) throws InvalidSettingsException {
-		phar_filename.validateSettings(settings);
+		pharFilename.validateSettings(settings);
 		if (settings.getString(CFGKEY_FILENAME) == null) {
 			throw new InvalidSettingsException("No phar file specified");
 		}
@@ -162,7 +162,7 @@ public class PharmacophoreReaderModel extends NodeModel {
 	@Override
 	protected void loadInternals(File nodeInternDir, ExecutionMonitor exec)
 			throws IOException, CanceledExecutionException {
-		String filename = phar_filename.getStringValue();
+		String filename = pharFilename.getStringValue();
 		if (filename == null) {
 			return;
 		}

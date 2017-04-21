@@ -3,6 +3,8 @@
 KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore.
 
 [![Build Status](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
+[![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
+[![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 

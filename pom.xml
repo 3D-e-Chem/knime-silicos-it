@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nl.esciencecenter.e3dchem.knime.silicosit</groupId>
 	<artifactId>nl.esciencecenter.e3dchem.knime.silicosit</artifactId>
@@ -34,6 +35,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<tycho.scmUrl>scm:git:https://github.com/3D-e-Chem/knime-silicos-it.git</tycho.scmUrl>
+		<sonar.host.url>https://sonarqube.com</sonar.host.url>
+		<sonar.organization>3d-e-chem</sonar.organization>
 	</properties>
 	<repositories>
 		<repository>
@@ -145,10 +148,12 @@
 			</plugins>
 		</pluginManagement>
 	</build>
-  <modules>
-    <module>plugin</module>
-    <module>feature</module>
-    <module>p2</module>
-    <module>tests</module>
-  </modules>
+	<modules>
+		<module>plugin</module>
+		<module>feature</module>
+		<module>p2</module>
+		<module>tests</module>
+	</modules>
+	<name>3D-e-Chem</name>
+	<url>https://3d-e-chem.github.io/</url>
 </project>

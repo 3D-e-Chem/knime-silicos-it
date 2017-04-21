@@ -1,7 +1,6 @@
 package nl.esciencecenter.e3dchem.knime.silicosit;
 
 import org.eclipse.core.runtime.Plugin;
-import org.osgi.framework.BundleContext;
 
 /**
  * This is the eclipse bundle activator.
@@ -23,30 +22,6 @@ public class Activator extends Plugin {
     public Activator() {
         super();
         plugin = this;
-    }
-
-    /**
-     * This method is called upon plug-in activation.
-     *
-     * @param context The OSGI bundle context
-     * @throws Exception If this plugin could not be started
-     */
-    @Override
-    public void start(final BundleContext context) throws Exception {
-        super.start(context);
-
-    }
-
-    /**
-     * This method is called when the plug-in is stopped.
-     *
-     * @param context The OSGI bundle context
-     * @throws Exception If this plugin could not be stopped
-     */
-    @Override
-    public void stop(final BundleContext context) throws Exception {
-        super.stop(context);
-        plugin = null;
     }
 
     /**

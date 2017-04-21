@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
+<entry key="spec_name" type="xstring" value="default"/>
+<entry key="number_columns" type="xint" value="2"/>
+<config key="column_spec_0">
+<entry key="column_name" type="xstring" value="Molecule"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.chem.types.SdfAdapterCell"/>
+<config key="adapter_classes">
+<entry key="array-size" type="xint" value="5"/>
+<entry key="0" type="xstring" value="org.knime.chem.types.SdfValue"/>
+<entry key="1" type="xstring" value="org.knime.core.data.DataValue"/>
+<entry key="2" type="xstring" value="org.knime.core.data.StringValue"/>
+<entry key="3" type="xstring" value="org.knime.core.data.RWAdapterValue"/>
+<entry key="4" type="xstring" value="org.knime.core.data.AdapterValue"/>
+</config>
+</config>
+<config key="column_domain"/>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_1">
+<entry key="column_name" type="xstring" value="Pharmacophore"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="3RZE.A%%00010HYBL%%0000961.4575%%000098.10339%%00009-12.6329%%000090.7%%000090%%000090%%000090%%000090%%00010HYBL%%0000962.4914%%000099.75533%%00009-7.49339%%000090.7%%000090%%000090%%000090%%000090%%00010HDON%%0000956.1295%%0000911.0093%%00009-10.4022%%000091%%000091%%0000956.4838%%0000911.9179%%00009-10.6233%%00010HACC%%0000963.5636%%0000910.3949%%00009-10.2503%%000091%%000091%%0000964.5634%%0000910.392%%00009-10.2295%%00010POSC%%0000956.1295%%0000911.0093%%00009-10.4022%%000091%%000090%%000090%%000090%%000090%%00010$$$$%%00010"/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+</config>

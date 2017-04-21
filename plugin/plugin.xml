@@ -19,6 +19,61 @@
           point="org.knime.workbench.repository.metanode">
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
+             description="Align molecules based on pharmacophore"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/align-it.png"
+             id="align-it"
+             name="align-it"
+             workflowDir="src/knime/align-it/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Generate pharmacophores"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/align-it.png"
+             id="align-it-phar"
+             name="align-it: Pharmacophore generator"
+             workflowDir="src/knime/align-it-phar/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Filter molecules based on properties"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/filter-it.png"
+             id="filter-it"
+             name="filter-it"
+             workflowDir="src/knime/filter-it/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Calculate molecule properties"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/filter-it.png"
+             id="filter-it-props"
+             name="filter-it: Property calculator"
+             workflowDir="src/knime/filter-it-props/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Calulate quantitative estimation of drug-likeness"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/biscu-it.png"
+             id="qed"
+             name="Qed Calculator"
+             workflowDir="src/knime/qed/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Align molecules based on shape"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/shape-it.png"
+             id="shape-it"
+             name="shape-it"
+             workflowDir="src/knime/shape-it/">
+       </PersistedMetaNode>
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             description="Extract molecular scaffolds"
              expert-flag="false"
              icon="nl/esciencecenter/e3dchem/knime/silicosit/strip-it.png"
              id="strip-it"

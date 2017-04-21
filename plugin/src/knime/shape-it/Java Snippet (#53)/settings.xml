@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="scriptImports" type="xstring" value="// Your custom imports:%%00010import java.io.InputStreamReader;%%00010import java.io.BufferedReader;%%00010"/>
+<entry key="scriptFields" type="xstring" value="// Your custom variables:%%00010"/>
+<entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010try {%%00010  Process p = new ProcessBuilder(c_args).start();%%00010  out_exit_value = p.waitFor();%%00010  String line = null;%%00010  BufferedReader err = new BufferedReader(new InputStreamReader(p.getErrorStream()));%%00010  while ((line = err.readLine()) != null) {%%00010    logWarn(line);%%00010  }%%00010  if (out_exit_value != 0) {%%00010    String msg = c_args[0] + &quot; exited with non zero exit value&quot;; %%00010    throw new Abort(msg);%%00010  }%%00010} catch (Exception e) {%%00010  throw new Abort(e);%%00010}%%00010"/>
+<config key="jarFiles">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="outCols">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="Name" type="xstring" value="exit_value"/>
+<entry key="JavaName" type="xstring" value="out_exit_value"/>
+<entry key="JavaType" type="xstring" value="java.lang.Integer"/>
+<config key="Type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.IntCell$IntCellFactory.create(class java.lang.Integer)"/>
+<entry key="replaceExisting" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="outVars">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="inCols">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="Name" type="xstring" value="args"/>
+<entry key="JavaName" type="xstring" value="c_args"/>
+<entry key="JavaType" type="xstring" value="[Ljava.lang.String;"/>
+<config key="Type">
+<config key="collection_element_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<entry key="cell_class" type="xstring" value="org.knime.core.data.collection.ListCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+<entry key="ConverterFactory" type="xstring" value="org.knime.core.data.convert.java.CollectionConverterFactory(org.knime.core.data.convert.java.SimpleDataCellToJavaConverterFactory(StringValue,class java.lang.String,String))"/>
+</config>
+</config>
+<config key="inVars">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="templateUUID" type="xstring" value="db068257-0657-4de7-8a01-53088e4de39c"/>
+<entry key="runOnExecute" type="xboolean" value="false"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="Execute"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="309"/>
+<entry key="y-coordinate" type="xint" value="719"/>
+<entry key="width" type="xint" value="143"/>
+<entry key="height" type="xint" value="20"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="11"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.jsnippet.JavaSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="Java Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.3.1.v201612191959"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.3.1.v201612192115"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Java Snippet"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 1, Cols: 5"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="e64d9338-ccdc-468c-884f-3c3083e35d2f"/>
+</config>
+</config>

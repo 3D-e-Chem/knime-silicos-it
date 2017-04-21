@@ -6,6 +6,7 @@ KNIME nodes and example workflows for software made by [Silicos-it](http://silic
 [![Build status Windows](https://ci.appveyor.com/api/projects/status/g7lqok1s6t6b2ydk/branch/master?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-silicos-it/branch/master)
 [![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 [![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
+[![DOI](https://zenodo.org/badge/88729000.svg)](https://zenodo.org/badge/latestdoi/88729000)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 
@@ -20,7 +21,7 @@ Steps to get the Silicos-it KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with url of update site which contains this node.
+3. Fill text fields with `https://3d-e-chem.github.io/updates`
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software

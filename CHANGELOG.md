@@ -5,6 +5,8 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.0.0] - 2017-04-21
+
 ### Added
 
 * Metanodes to execute align-it, filter-it, qed, shape-it and strip-it (#2)

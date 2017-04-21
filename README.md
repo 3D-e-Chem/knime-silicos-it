@@ -2,7 +2,8 @@
 
 KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore.
 
-[![Build Status](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
+[![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
+[![Build status Windows](https://ci.appveyor.com/api/projects/status/g7lqok1s6t6b2ydk/branch/master?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-silicos-it/branch/master)
 [![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 [![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 
@@ -49,8 +50,6 @@ The update site can be used to perform a local installation.
 Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) and Windows (AppVeyor) are present.
 
 See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull request.
-Also see `./.travis.yml` file how to upload coverage to https://www.codacy.com .
-
 See `./appveyor.yml` file how to run on https://www.appveyor.com .
 
 # Development

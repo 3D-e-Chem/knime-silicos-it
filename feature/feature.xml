@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="nl.esciencecenter.e3dchem.knime.silicosit.feature"
-      label="Silicos-it nodes"
+      label="Silicos-it KNIME nodes"
       version="1.0.0.qualifier"
       provider-name="Netherlands eScience Center">
 

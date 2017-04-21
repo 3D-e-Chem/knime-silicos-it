@@ -5,15 +5,26 @@
       <extension
          point="org.knime.workbench.repository.categories">
       <category
-            description="Category containing my nodes"
+            description="Category containing Silicos-it nodes"
             icon="nl/esciencecenter/e3dchem/knime/silicosit/default.png"
-            level-id="PharmacophoreReader"
-            name="PharmacophoreReader"
+            level-id="silicos-it"
+            name="Silicos-it"
             path="/community/3d-e-chem"/>
    </extension>
 
     <extension point="org.knime.workbench.repository.nodes">
-        <node category-path="/community/3d-e-chem/PharmacophoreReader" factory-class="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory" id="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory"/>
+        <node category-path="/community/3d-e-chem/silicos-it" factory-class="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory" id="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory"/>
+    </extension>
+    <extension
+          point="org.knime.workbench.repository.metanode">
+       <PersistedMetaNode
+             category-path="/community/3d-e-chem/silicos-it"
+             expert-flag="false"
+             icon="nl/esciencecenter/e3dchem/knime/silicosit/strip-it.png"
+             id="strip-it"
+             name="strip-it"
+             workflowDir="src/knime/strip-it/">
+       </PersistedMetaNode>
     </extension>
 
 </plugin>

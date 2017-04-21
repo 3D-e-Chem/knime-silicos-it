@@ -7,7 +7,9 @@ matrix:
  include:
  - os: linux
    jdk: oraclejdk8
-   script: xvfb-run mvn verify -B
+   script: 
+   - xvfb-run mvn verify -B
+   - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
  - os: osx
    osx_image: xcode8.2
    script: Xvfb :5009 & export DISPLAY=:5009 && mvn verify -B
@@ -18,7 +20,4 @@ cache:
    - $HOME/.m2
    - $HOME/.sonar/cache
 install: mvn package -B
-script:
-- mvn verify -B
-- mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
 

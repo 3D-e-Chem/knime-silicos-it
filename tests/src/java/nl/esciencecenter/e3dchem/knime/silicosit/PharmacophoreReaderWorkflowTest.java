@@ -25,7 +25,7 @@ public class PharmacophoreReaderWorkflowTest {
         TestrunConfiguration runConfiguration = new TestrunConfiguration();
         runConfiguration.setTestDialogs(true);
         runConfiguration.setReportDeprecatedNodes(true);
-        runConfiguration.setCheckMemoryLeaks(true);
+        runConfiguration.setCheckMemoryLeaks(false);
         runConfiguration.setLoadSaveLoad(false);
         runner = new TestFlowRunner(collector, runConfiguration);
     }

@@ -17,7 +17,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="BaseDir" type="xstring" value="/tmp/knime_align_it_align_50375/knime_tc_eoapogivrxwu/"/>
+<entry key="BaseDir" type="xstring" value="/tmp/knime_align_it_align_50375/knime_tc_eoapogivrxwu"/>
 <config key="FileName_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -43,6 +43,12 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="previewArea" type="xstring" value=""/>
+</config>
+<config key="variables">
+<config key="BaseDir">
+<entry key="used_variable" type="xstring" value="temp_path"/>
+<entry key="exposed_variable" type="xstring" isnull="true" value=""/>
+</config>
 </config>
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="aligned.sdf"/>
@@ -87,6 +93,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="45ec789c-8a0f-4d57-b4d1-3f7f14c603fd"/>
+<entry key="file_store_id" type="xstring" value="371b7d49-7ce0-4f53-bfc6-a33751ea8018"/>
 </config>
 </config>

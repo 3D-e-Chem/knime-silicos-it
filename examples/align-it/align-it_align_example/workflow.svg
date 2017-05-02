@@ -108,7 +108,7 @@
                 <path d="M356 293 L420 293 L420 304 L356 304 L356 293 Z"/>
             </clipPath>
             <clipPath clipPathUnits="userSpaceOnUse" id="clipPath32">
-                <path d="M-1 -1 L1244 -1 L1244 742 L-1 742 L-1 -1 Z"/>
+                <path d="M-1 -1 L1244 -1 L1244 657 L-1 657 L-1 -1 Z"/>
             </clipPath>
         </defs>
         <g font-size="14" fill="white" font-family="&apos;Ubuntu&apos;"
@@ -760,6 +760,18 @@ rkJggg==" xlink:actuate="onLoad"/>
         <g stroke-linecap="butt" font-size="14" fill="rgb(150,150,150)"
            text-rendering="optimizeLegibility" font-family="&apos;Ubuntu&apos;"
            stroke="rgb(150,150,150)">
+            <line clip-path="url(#clipPath32)" fill="none" x1="512" x2="520"
+                  y1="158" y2="158"/>
+            <line clip-path="url(#clipPath32)" fill="none" x1="520" x2="613"
+                  y1="158" y2="158"/>
+            <line clip-path="url(#clipPath32)" fill="none" x1="613" x2="621"
+                  y1="158" y2="158"/>
+            <line clip-path="url(#clipPath32)" fill="none" x1="92" x2="100"
+                  y1="288" y2="288"/>
+            <line clip-path="url(#clipPath32)" fill="none" x1="100" x2="173"
+                  y1="288" y2="298"/>
+            <line clip-path="url(#clipPath32)" fill="none" x1="173" x2="181"
+                  y1="298" y2="298"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="232" x2="240"
                   y1="298" y2="298"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="240" x2="313"
@@ -773,23 +785,11 @@ rkJggg==" xlink:actuate="onLoad"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="453" x2="461"
                   y1="167" y2="167"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="92" x2="100"
-                  y1="288" y2="288"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="100" x2="173"
-                  y1="288" y2="298"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="173" x2="181"
-                  y1="298" y2="298"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="92" x2="100"
                   y1="148" y2="148"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="100" x2="453"
                   y1="148" y2="148"/>
             <line clip-path="url(#clipPath32)" fill="none" x1="453" x2="461"
                   y1="148" y2="148"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="512" x2="520"
-                  y1="158" y2="158"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="520" x2="613"
-                  y1="158" y2="158"/>
-            <line clip-path="url(#clipPath32)" fill="none" x1="613" x2="621"
-                  y1="158" y2="158"/>
         </g>
     </g>
 </svg>

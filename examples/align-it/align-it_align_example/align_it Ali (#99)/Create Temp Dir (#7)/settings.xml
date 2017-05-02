@@ -6,7 +6,7 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="temp_path"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="/tmp/knime_align_it_align_50375/knime_tc_eoapogivrxwu"/>
+<entry key="value" type="xstring" value="/tmp/knime_align_it_align_11649/knime_tc_2fdhalcdaajn"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
@@ -15,7 +15,7 @@
 <config key="model">
 <entry key="baseName" type="xstring" value="knime_tc_"/>
 <entry key="variableName" type="xstring" value="temp_path"/>
-<entry key="deleteOnReset" type="xboolean" value="true"/>
+<entry key="deleteOnReset" type="xboolean" value="false"/>
 <config key="variable_name_pairs"/>
 </config>
 <config key="nodeAnnotation">
@@ -61,6 +61,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="b4de3d38-27b7-4d64-beec-50c53c27e637"/>
+<entry key="file_store_id" type="xstring" value="16fe9c9e-6c40-4875-851f-82d83607d6de"/>
 </config>
 </config>

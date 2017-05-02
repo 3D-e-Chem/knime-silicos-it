@@ -6,43 +6,43 @@
 <entry key="type" type="xstring" value="variable"/>
 <entry key="name" type="xstring" value="reference_fn"/>
 <entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="/tmp/knime_align_it_align_50375/knime_tc_eoapogivrxwu/reference.sdf"/>
+<entry key="value" type="xstring" value="/tmp/knime_align_it_align_11649/knime_tc_2fdhalcdaajn/reference.sdf"/>
 </config>
 </config>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<config key="FileExtension_Internals">
+<config key="BaseDir_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="FileExtension" type="xstring" value=".sdf"/>
+<entry key="BaseDir" type="xstring" value="/tmp/knime_align_it_align_11649/knime_tc_ud6nwrymiixb"/>
 <config key="FileName_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="FileName" type="xstring" value="reference"/>
-<config key="BaseDir_Internals">
+<config key="FileExtension_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="BaseDir" type="xstring" value="/tmp/knime_Workflow Manage10332/knime_tc_qbjwsge4sw3o"/>
-<config key="previewArea_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="previewArea" type="xstring" value="/tmp/knime_Workflow Manage10243/knime_tc_mlduvck66lin/input.sdf"/>
-<config key="OutputFlowVarName_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="OutputFlowVarName" type="xstring" value="reference_fn"/>
+<entry key="FileExtension" type="xstring" value=".sdf"/>
 <config key="OverwriteFlag_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <entry key="OverwriteFlag" type="xboolean" value="false"/>
+<config key="OutputFlowVarName_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="OutputFlowVarName" type="xstring" value="reference_fn"/>
+<config key="previewArea_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="previewArea" type="xstring" value="/tmp/knime_Workflow Manage10243/knime_tc_mlduvck66lin/input.sdf"/>
 </config>
 <config key="variables">
 <config key="BaseDir">
@@ -93,6 +93,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="1e7f6ce5-9ec4-4822-be6e-44e381565b85"/>
+<entry key="file_store_id" type="xstring" value="f9b8744b-2c1b-438a-8807-41157156f527"/>
 </config>
 </config>

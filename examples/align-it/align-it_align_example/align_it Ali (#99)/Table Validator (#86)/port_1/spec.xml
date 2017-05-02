@@ -22,7 +22,7 @@
 <config key="column_properties"/>
 </config>
 <config key="column_spec_1">
-<entry key="column_name" type="xstring" value="Molecule name"/>
+<entry key="column_name" type="xstring" value="Reference"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>

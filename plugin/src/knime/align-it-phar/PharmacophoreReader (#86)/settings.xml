@@ -34,18 +34,18 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
-<entry key="factory" type="xstring" value="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory"/>
-<entry key="node-name" type="xstring" value="Pharmacophore Reader"/>
-<entry key="node-bundle-name" type="xstring" value="KNIME nodes for Silicos-it software"/>
-<entry key="node-bundle-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.silicosit.plugin"/>
+<entry key="factory" type="xstring" value="nl.esciencecenter.e3dchem.knime.pharmacophore.reader.ReaderFactory"/>
+<entry key="node-name" type="xstring" value="Pharmacophore reader"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME nodes for working with pharmacophores"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.pharmacophore.plugin"/>
 <entry key="node-bundle-vendor" type="xstring" value="Netherlands eScience Center"/>
 <entry key="node-bundle-version" type="xstring" value="1.0.0.v201704200851"/>
-<entry key="node-feature-name" type="xstring" value="Silicos-it nodes"/>
-<entry key="node-feature-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.silicosit.feature.feature.group"/>
+<entry key="node-feature-name" type="xstring" value="Pharmacphore nodes"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.pharmacophore.feature.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="Netherlands eScience Center"/>
 <entry key="node-feature-version" type="xstring" value="1.0.0.v201704200851"/>
 <config key="factory_settings"/>
-<entry key="name" type="xstring" value="Pharmacophore Reader"/>
+<entry key="name" type="xstring" value="Pharmacophore reader"/>
 <entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">

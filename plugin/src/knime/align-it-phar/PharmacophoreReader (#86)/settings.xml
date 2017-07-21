@@ -39,11 +39,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME nodes for working with pharmacophores"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.pharmacophore.plugin"/>
 <entry key="node-bundle-vendor" type="xstring" value="Netherlands eScience Center"/>
-<entry key="node-bundle-version" type="xstring" value="1.0.0.v201704200851"/>
+<entry key="node-bundle-version" type="xstring" value="1.0.0.v201707211123"/>
 <entry key="node-feature-name" type="xstring" value="Pharmacphore nodes"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="nl.esciencecenter.e3dchem.knime.pharmacophore.feature.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="Netherlands eScience Center"/>
-<entry key="node-feature-version" type="xstring" value="1.0.0.v201704200851"/>
+<entry key="node-feature-version" type="xstring" value="1.0.0.v201707211123"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Pharmacophore reader"/>
 <entry key="hasContent" type="xboolean" value="true"/>

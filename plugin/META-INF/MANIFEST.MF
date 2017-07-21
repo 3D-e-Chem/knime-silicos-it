@@ -4,7 +4,6 @@ Bundle-Name: KNIME nodes for Silicos-it software
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.silicosit.plugin;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-Activator: nl.esciencecenter.e3dchem.knime.silicosit.Activator
 Bundle-Vendor: Netherlands eScience Center
 Require-Bundle: org.eclipse.core.runtime,
  org.knime.workbench.core;bundle-version="[3.3.0,4.0.0)",
@@ -12,7 +11,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.base;bundle-version="[3.3.0,4.0.0)",
  org.knime.chem.base;bundle-version="[3.3.0,4.0.0)",
  org.knime.python.nodes;bundle-version="[3.3.0,4.0.0)",
- nl.esciencecenter.e3dchem.plugin
+ nl.esciencecenter.e3dchem.plugin,
+ nl.esciencecenter.e3dchem.knime.pharmacophore.plugin;bundle-version="[1.0.0,2.0.0)"
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
 Export-Package: nl.esciencecenter.e3dchem.knime.silicosit

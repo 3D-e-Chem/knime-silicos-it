@@ -12,9 +12,6 @@
             path="/community/3d-e-chem"/>
    </extension>
 
-    <extension point="org.knime.workbench.repository.nodes">
-        <node category-path="/community/3d-e-chem/silicos-it" factory-class="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory" id="nl.esciencecenter.e3dchem.knime.silicosit.PharmacophoreReaderFactory"/>
-    </extension>
     <extension
           point="org.knime.workbench.repository.metanode">
        <PersistedMetaNode

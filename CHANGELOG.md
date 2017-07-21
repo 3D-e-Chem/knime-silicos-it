@@ -5,6 +5,8 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.0.1] - 2017-07-21
+
 ### Changed
 
 * Moved Pharmacophore reader node to own plugin at https://github.com/3D-e-Chem/knime-pharmacophore

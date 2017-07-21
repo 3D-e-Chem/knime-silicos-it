@@ -2,7 +2,7 @@
 <feature
       id="nl.esciencecenter.e3dchem.knime.silicosit.feature"
       label="Silicos-it KNIME nodes"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="Netherlands eScience Center">
 
    <description url="https://github.com/3D-e-Chem/knime-silicos-it">

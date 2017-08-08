@@ -10,6 +10,12 @@
             level-id="silicos-it"
             name="Silicos-it"
             path="/community/3d-e-chem"/>
+    <category
+            description="Category containing Silicos-it internal nodes"
+            icon="nl/esciencecenter/e3dchem/knime/silicosit/default.png"
+            level-id="internal"
+            name="Internal"
+            path="/community/3d-e-chem/silicos-it"/>
    </extension>
 
     <extension
@@ -96,7 +102,7 @@
           point="org.knime.workbench.repository.nodes">
        <node
              deprecated="false"
-             category-path="/community/3d-e-chem/silicos-it"
+             category-path="/community/3d-e-chem/silicos-it/internal"
              factory-class="nl.esciencecenter.e3dchem.knime.silicosit.execute.ExecuteFactory">
        </node>
     </extension>

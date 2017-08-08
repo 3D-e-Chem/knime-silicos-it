@@ -78,5 +78,27 @@
              workflowDir="src/knime/strip-it/">
        </PersistedMetaNode>
     </extension>
+    <extension
+          point="org.eclipse.ui.preferencePages">
+       <page
+             class="nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferencePage"
+             id="nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferencePage"
+             name="Silicos-it">
+       </page>
+    </extension>
+    <extension
+          point="org.eclipse.core.runtime.preferences">
+       <initializer
+             class="nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferenceInitializer">
+       </initializer>
+    </extension>
+    <extension
+          point="org.knime.workbench.repository.nodes">
+       <node
+             deprecated="false"
+             category-path="/community/3d-e-chem/silicos-it"
+             factory-class="nl.esciencecenter.e3dchem.knime.silicosit.execute.ExecuteFactory">
+       </node>
+    </extension>
 
 </plugin>

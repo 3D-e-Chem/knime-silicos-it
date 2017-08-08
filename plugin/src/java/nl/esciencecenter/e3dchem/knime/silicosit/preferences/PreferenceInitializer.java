@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Path;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.preferences.AbstractPreferenceInitializer;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.osgi.framework.Bundle;
@@ -27,14 +28,14 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		store.setDefault(PreferenceConstants.SILICOSIT_BINDIR, silicositBinDir);
 		String babelLibDir = findPathInBundle("lib/plugins");
 		store.setDefault(PreferenceConstants.BABEL_LIBDIR, babelLibDir);
-		String babelDataDir = findPathInBundle("lib/plugins");
+		String babelDataDir = findPathInBundle("data");
 		store.setDefault(PreferenceConstants.BABEL_DATADIR, babelDataDir);
 	}
 
 	private String findPathInBundle(String path) {
-		Bundle bundle = Activator.getDefault().getBundle();
+		Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		try {
-			return FileLocator.toFileURL(FileLocator.find(bundle, new Path("bin"), null)).getPath();
+			return FileLocator.toFileURL(FileLocator.find(bundle, new Path(path), null)).getPath();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

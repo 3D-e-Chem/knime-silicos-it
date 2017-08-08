@@ -87,6 +87,7 @@
     <extension
           point="org.eclipse.ui.preferencePages">
        <page
+             category="org.knime.workbench.ui.preferences"
              class="nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferencePage"
              id="nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferencePage"
              name="Silicos-it">

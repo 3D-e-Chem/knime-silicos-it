@@ -236,6 +236,7 @@ http://www.apache.org/licenses/
          download-size="0"
          install-size="0"
          version="0.0.0"
+         unpack="true"
          fragment="true"/>
 
 </feature>

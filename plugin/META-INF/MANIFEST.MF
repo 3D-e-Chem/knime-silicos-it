@@ -12,7 +12,9 @@ Require-Bundle: org.eclipse.core.runtime,
  org.knime.chem.base;bundle-version="[3.3.0,4.0.0)",
  org.knime.python.nodes;bundle-version="[3.3.0,4.0.0)",
  nl.esciencecenter.e3dchem.plugin,
- nl.esciencecenter.e3dchem.knime.pharmacophore.plugin;bundle-version="[1.0.0,2.0.0)"
+ nl.esciencecenter.e3dchem.knime.pharmacophore.plugin;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.ui
+Comment: nl.esciencecenter.e3dchem.knime.silicosit.bin.linux;bundle-version="1.1.0";resolution:=optional
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
 Export-Package: nl.esciencecenter.e3dchem.knime.silicosit

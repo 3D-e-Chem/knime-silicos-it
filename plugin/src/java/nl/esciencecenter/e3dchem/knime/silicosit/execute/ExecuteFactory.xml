@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<knimeNode icon="./default.png" type="Other" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+<knimeNode icon="../default.png" type="Other" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
     <name>Silicos-it executor</name>
     
     <shortDescription>
@@ -19,6 +19,6 @@
     
     <ports>
     	<inPort index="0" name="Arguments">Input table with arguments column</inPort>
-        <outPort index="0" name="Exit values">Output table with exit value column</outPort>
+        <outPort index="0" name="Silicos-it program output">Output table with exit value, standard output and standard error columns</outPort>
     </ports>    
 </knimeNode>

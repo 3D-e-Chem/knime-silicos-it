@@ -2,6 +2,7 @@ package nl.esciencecenter.e3dchem.knime.silicosit.execute;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -18,6 +19,7 @@ import org.knime.core.data.collection.ListCell;
 import org.knime.core.data.def.DefaultRow;
 import org.knime.core.data.def.IntCell;
 import org.knime.core.data.def.StringCell;
+import org.knime.core.data.def.StringCell.StringCellFactory;
 import org.knime.core.node.BufferedDataContainer;
 import org.knime.core.node.BufferedDataTable;
 import org.knime.core.node.CanceledExecutionException;
@@ -106,24 +108,29 @@ public class ExecuteNode extends NodeModel {
 			commands.add(argument);
 		}
 	
-		ProcessBuilder pb = new ProcessBuilder(commands).inheritIO();
+		ProcessBuilder pb = new ProcessBuilder(commands);
 		Map<String, String> env = pb.environment();
 		String babelLibDir = Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.BABEL_LIBDIR);
 		env.put("BABEL_LIBDIR", babelLibDir);
 		String babelDataDir = Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.BABEL_DATADIR);
 		env.put("BABEL_DATADIR", babelDataDir);
-		int exitValue = pb.start().waitFor();
+		Process process = pb.start();
+		InputStream stdout = process.getInputStream();
+		InputStream stderr = process.getErrorStream();
+		int exitValue = process.waitFor();
 		if (exitValue != 0) {
 			setWarningMessage("Some rows failed to execute correctly");
 		}
-		DataCell cell = new IntCell(exitValue);
-		return new DefaultRow(rowKey, cell);
+		StringCellFactory factory = new StringCell.StringCellFactory();
+		return new DefaultRow(rowKey, new IntCell(exitValue), factory.createCell(stdout), factory.createCell(stderr));
 	}
 
 	private DataTableSpec createOutputSpec() {
-		DataColumnSpecCreator colSpecCreator = new DataColumnSpecCreator("exit value", IntCell.TYPE);
-		DataColumnSpec colSpec = colSpecCreator.createSpec();
-		return new DataTableSpec(colSpec);
+		return new DataTableSpec(
+				new DataColumnSpecCreator("exit value", IntCell.TYPE).createSpec(),
+				new DataColumnSpecCreator("standard output", StringCell.TYPE).createSpec(),
+				new DataColumnSpecCreator("standard error", StringCell.TYPE).createSpec()
+		);
 	}
 
 	@Override

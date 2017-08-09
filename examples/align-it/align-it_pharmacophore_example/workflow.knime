@@ -7,10 +7,10 @@
 <entry key="authored-by" type="xstring" value="vagrant"/>
 <entry key="authored-when" type="xstring" value="2017-04-18 14:42:01 +0200"/>
 <entry key="lastEdited-by" type="xstring" value="verhoes"/>
-<entry key="lastEdited-when" type="xstring" value="2017-08-09 10:23:12 +0200"/>
+<entry key="lastEdited-when" type="xstring" value="2017-08-09 11:05:47 +0200"/>
 </config>
 <entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to generate pharmacophores from molecules using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/align-it/1.0.4/align-it.html&quot;&gt;align-it tool&lt;/a&gt;.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type SDF.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has a column added called Pharmacophore.%%00010&lt;/p&gt;"/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="annotations">
 <config key="annotation_0">

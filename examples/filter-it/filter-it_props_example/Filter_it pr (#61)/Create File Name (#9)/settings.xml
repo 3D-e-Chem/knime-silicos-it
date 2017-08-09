@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
 <entry key="node_file" type="xstring" value="settings.xml"/>
-<config key="flow_stack">
-<config key="Variable_0">
-<entry key="type" type="xstring" value="variable"/>
-<entry key="name" type="xstring" value="input_fn"/>
-<entry key="class" type="xstring" value="STRING"/>
-<entry key="value" type="xstring" value="/tmp/knime_filter_it_props20693/knime_tc_4jkeso002qst/input.sdf"/>
-</config>
-</config>
+<config key="flow_stack"/>
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
@@ -65,7 +58,11 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Selected dir: /tmp/knime_filter_it_ Calc20714/knime_tc_pqsrkavpemrn cannot be accessed!"/>
+</config>
 <entry key="factory" type="xstring" value="org.knime.base.node.flowvariable.createfilename.CreateFilenameNodeFactory"/>
 <entry key="node-name" type="xstring" value="Create File Name"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -78,21 +75,16 @@
 <entry key="node-feature-version" type="xstring" value="3.3.2.v201704061137"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Create File Name"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.flowvariable.FlowVariablePortObjectSpec"/>
-<entry key="port_object_class" type="xstring" value="org.knime.core.node.port.flowvariable.FlowVariablePortObject"/>
-<entry key="port_object_summary" type="xstring" value="Variables connection"/>
-<entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
-<entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
-<entry key="port_dir_location" type="xstring" value="port_1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="bbb20201-7ec9-4fe5-9ea9-bb072c9b0640"/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>

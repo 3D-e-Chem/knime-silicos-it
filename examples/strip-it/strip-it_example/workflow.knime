@@ -7,10 +7,10 @@
 <entry key="authored-by" type="xstring" value="vagrant"/>
 <entry key="authored-when" type="xstring" value="2017-04-18 12:39:13 +0200"/>
 <entry key="lastEdited-by" type="xstring" value="verhoes"/>
-<entry key="lastEdited-when" type="xstring" value="2017-08-09 10:26:56 +0200"/>
+<entry key="lastEdited-when" type="xstring" value="2017-08-09 11:06:37 +0200"/>
 </config>
 <entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to generate scaffolds using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/filter-it/1.0.2/strip-it.html&quot;&gt;strip-it tool&lt;/a&gt;. All scaffold types that strip-it knows will be generated.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colums added containing different scaffold types.%%00010&lt;/p&gt;%%00010"/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="annotations">
 <config key="annotation_0">

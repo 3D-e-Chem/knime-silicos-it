@@ -24,7 +24,7 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to calculate molecule properties based on filter rules using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/filter-it/1.0.2/filter-it.html&quot;&gt;filter-it tool&lt;/a&gt;.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010First input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;Second input port should contain the filter rules in a string column named filter_rule. For available rules see &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/filter-it/1.0.2/filter-it.html#filter-parameters&quot;&gt;filter-it manual&lt;/a&gt;%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colums added containing molecule properties that are required to apply a filter rule.%%00010&lt;/p&gt;%%00010"/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
 <config key="node_7">
@@ -413,15 +413,15 @@
 </config>
 <config key="connection_19">
 <entry key="sourceID" type="xint" value="89"/>
-<entry key="destID" type="xint" value="83"/>
-<entry key="sourcePort" type="xint" value="0"/>
-<entry key="destPort" type="xint" value="0"/>
-</config>
-<config key="connection_20">
-<entry key="sourceID" type="xint" value="89"/>
 <entry key="destID" type="xint" value="81"/>
 <entry key="sourcePort" type="xint" value="1"/>
 <entry key="destPort" type="xint" value="1"/>
+</config>
+<config key="connection_20">
+<entry key="sourceID" type="xint" value="89"/>
+<entry key="destID" type="xint" value="83"/>
+<entry key="sourcePort" type="xint" value="0"/>
+<entry key="destPort" type="xint" value="0"/>
 </config>
 </config>
 <config key="meta_in_ports">

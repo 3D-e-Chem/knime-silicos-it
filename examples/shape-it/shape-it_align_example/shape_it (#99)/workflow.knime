@@ -24,7 +24,7 @@
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to align a database of molecules to a reference molecule based on shape using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/shape-it/1.0.1/align-it.html&quot;&gt;shape-it tool&lt;/a&gt;.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010First input port should contain a single reference molecule in a column called Molecule of type SDF.%%00010&lt;/p&gt;%%00010&lt;p&gt;Second input port should contain the molecules to align in a column called Molecule of type SDF.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has the following columns added aligned molecule and the alignment scores.%%00010&lt;/p&gt;"/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="IDLE"/>
 <config key="workflow_credentials"/>
 <config key="nodes">
 <config key="node_7">

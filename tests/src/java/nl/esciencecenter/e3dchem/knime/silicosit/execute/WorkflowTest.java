@@ -13,7 +13,6 @@ import org.knime.core.node.workflow.UnsupportedWorkflowVersionException;
 import org.knime.core.util.LockFailedException;
 import org.knime.testing.core.TestrunConfiguration;
 
-import nl.esciencecenter.e3dchem.knime.silicosit.preferences.PreferenceInitializer;
 import nl.esciencecenter.e3dchem.knime.testing.TestFlowRunner;
 
 public class WorkflowTest {
@@ -27,9 +26,6 @@ public class WorkflowTest {
 		runConfiguration.setLoadSaveLoad(false);
 		runConfiguration.setTestDialogs(true);
 		runner = new TestFlowRunner(collector, runConfiguration);
-
-		PreferenceInitializer initializer = new PreferenceInitializer();
-		initializer.initializeDefaultPreferences();
 	}
 
 	@Test

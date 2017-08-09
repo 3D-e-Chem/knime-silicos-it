@@ -15,7 +15,6 @@ import nl.esciencecenter.e3dchem.knime.silicosit.Activator;
  * Class used to initialize default preference values.
  */
 public class PreferenceInitializer extends AbstractPreferenceInitializer {
-
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -37,9 +36,7 @@ public class PreferenceInitializer extends AbstractPreferenceInitializer {
 		try {
 			return FileLocator.toFileURL(FileLocator.find(bundle, new Path(path), null)).getPath();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			return "";
 		}
-		return "";
 	}
 }

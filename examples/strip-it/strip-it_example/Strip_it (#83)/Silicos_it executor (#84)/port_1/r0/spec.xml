@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
+<entry key="spec_name" type="xstring" value="default"/>
+<entry key="number_columns" type="xint" value="3"/>
+<config key="column_spec_0">
+<entry key="column_name" type="xstring" value="exit value"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+</config>
+<config key="column_domain">
+<config key="lower_bound">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<config key="org.knime.core.data.def.IntCell">
+<entry key="IntCell" type="xint" value="0"/>
+</config>
+</config>
+<config key="upper_bound">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<config key="org.knime.core.data.def.IntCell">
+<entry key="IntCell" type="xint" value="0"/>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_1">
+<entry key="column_name" type="xstring" value="standard output"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value=""/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_2">
+<entry key="column_name" type="xstring" value="standard error"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain">
+<config key="possible_values">
+<entry key="array-size" type="xint" value="1"/>
+<config key="0">
+<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
+<config key="org.knime.core.data.def.StringCell">
+<entry key="StringCell" type="xstring" value="+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++%%00010  Strip-it v1.0.2 | Aug  7 2017 15:07:29%%00010%%00010  -&gt; GCC:         4.6.3%%00010  -&gt; Open Babel:  2.3.0%%00010%%00010  Copyright 2012 by Silicos-it, a division of Imacosi BVBA%%00010%%00010%%00010  Strip-it is free software: you can redistribute it and/or modify%%00010  it under the terms of the GNU Lesser General Public License as published%%00010  by the Free Software Foundation, either version 3 of the License, or%%00010  (at your option) any later version.%%00010%%00010  Strip-it is distributed in the hope that it will be useful,%%00010  but WITHOUT ANY WARRANTY; without even the implied warranty of%%00010  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the%%00010  GNU Lesser General Public License for more details.%%00010%%00010  You should have received a copy of the GNU Lesser General Public License%%00010  along with Strip-it.  If not, see http://www.gnu.org/licenses/.%%00010%%00010  Strip-it is linked against OpenBabel version 2.%%00010  OpenBabel is free software; you can redistribute it and/or modify%%00010  it under the terms of the GNU General Public License as published by%%00010  the Free Software Foundation version 2 of the License.%%00010%%00010%%00010## START PARSING COMMAND LINE OPTIONS%%00010-&gt; Output file:       /tmp/knime_strip_it_exampl20701/knime_tc_hyig2gyoct5m/output_pass.tsv -&gt; ok%%00010-&gt; Input file:        /tmp/knime_strip_it_exampl20701/knime_tc_hyig2gyoct5m/input.sdf (sdf) -&gt; ok%%00010## END PARSING COMMAND LINE OPTIONS%%00010%%00010## START OF CALCULATIONS%%00010-&gt; Molecules processed: 5%%00010-&gt; Scaffolds generated: 60%%00010-&gt; Scaffolds failed:    0%%00010## END OF CALCULATIONS%%00010"/>
+</config>
+</config>
+</config>
+</config>
+<config key="column_properties"/>
+</config>
+</config>

@@ -16,11 +16,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Chemistry Base nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.chem.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="3.3.0.v201612012034"/>
+<entry key="node-bundle-version" type="xstring" value="3.3.2.v201704041551"/>
 <entry key="node-feature-name" type="xstring" value="KNIME Base Chemistry Types &amp; Nodes"/>
 <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.chem.types.feature.group"/>
 <entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-feature-version" type="xstring" value="3.3.0.v201612012034"/>
+<entry key="node-feature-version" type="xstring" value="3.3.2.v201704041551"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Molecule Type Cast"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -36,6 +36,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="331c6579-7705-4416-bf99-8d0effa22893"/>
+<entry key="file_store_id" type="xstring" value="7b11cdaf-8093-473d-b0b6-ef5b40d984a5"/>
 </config>
 </config>

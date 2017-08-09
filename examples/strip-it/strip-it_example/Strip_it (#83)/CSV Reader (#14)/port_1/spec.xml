@@ -202,7 +202,7 @@
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="C1CCC(CC1)C1CCCC(C1)C1CCC(C1)C1CCCCC1"/>
+<entry key="StringCell" type="xstring" value="C1CCC(CC1)C1CCC(C1)C1CCCC(C1)C1CCCCC1"/>
 </config>
 </config>
 <config key="2">
@@ -247,7 +247,7 @@
 <config key="1">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="C1CC1C1CC1C1CC1C1CC1"/>
+<entry key="StringCell" type="xstring" value="C1C(C1C1CC1)C1CC1C1CC1"/>
 </config>
 </config>
 <config key="2">

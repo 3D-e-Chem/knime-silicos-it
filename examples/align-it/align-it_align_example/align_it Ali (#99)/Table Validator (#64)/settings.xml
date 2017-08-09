@@ -49,10 +49,10 @@
 <config key="nodeAnnotation">
 <entry key="text" type="xstring" value="Must have %%00010Molecule column"/>
 <entry key="bgcolor" type="xint" value="16777215"/>
-<entry key="x-coordinate" type="xint" value="293"/>
+<entry key="x-coordinate" type="xint" value="303"/>
 <entry key="y-coordinate" type="xint" value="359"/>
-<entry key="width" type="xint" value="134"/>
-<entry key="height" type="xint" value="40"/>
+<entry key="width" type="xint" value="115"/>
+<entry key="height" type="xint" value="28"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
 <entry key="borderSize" type="xint" value="0"/>
 <entry key="borderColor" type="xint" value="16777215"/>
@@ -96,6 +96,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="d013c7fe-e36d-4ca6-80de-3a57f7a9f74c"/>
+<entry key="file_store_id" type="xstring" value="bd694633-7cfc-46c5-aa07-1757e73f3964"/>
 </config>
 </config>

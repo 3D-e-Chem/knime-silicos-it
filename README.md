@@ -76,6 +76,18 @@ Steps to get development environment setup:
 
 During import the Tycho Eclipse providers must be installed.
 
+## Meta nodes
+
+This plugin uses metanodes as it's public nodes. The are created in the following way:
+
+1. The meta nodes are first created and tested inside the example workflows in the `examples/` directory.
+2. The `name` and `customDescription` field inside `examples/**/workflow.knime` is filled.
+3. The examples are fully run and committed
+4. The meta nodes are internally completely reset, so we don't ship public nodes with example data in them.
+5. The meta nodes from the example workflows are then copied to the `plugin/src/knime/` directory.
+6. The meta nodes are added to the `plugin/plugin.xml` as PersistedMetaNode in the `org.knime.workbench.repository.metanode` extension.
+7. The examples are checked-out to their fully run state.
+
 ## Tests
 
 Tests for the node are in `tests/src` directory.

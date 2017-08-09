@@ -101,11 +101,14 @@ public class ExecuteNode extends NodeModel {
 		IPreferenceStore preferenceStore = Activator.getDefault().getPreferenceStore();
 		String silicositBinDir = preferenceStore.getString(PreferenceConstants.SILICOSIT_BINDIR);
 		String executable = config.program.getStringValue();
-		if (!"".equals(silicositBinDir)) {
+		if ("".equals(silicositBinDir)) {
+			this.getLogger().warn("Directory with Silicos-it binaries not set, expecting binaries to be in PATH");
+		} else {
 			executable = new File(
 					silicositBinDir,
 					config.program.getStringValue()
 			).getCanonicalPath();
+			this.getLogger().warn("Directory with Silicos-it binaries: " + silicositBinDir + " - " + executable);
 		}
 		commands.add(executable);
 		for (String argument : arguments) {
@@ -115,12 +118,20 @@ public class ExecuteNode extends NodeModel {
 		ProcessBuilder pb = new ProcessBuilder(commands);
 		Map<String, String> env = pb.environment();
 		String babelLibDir = preferenceStore.getString(PreferenceConstants.BABEL_LIBDIR);
-		if ("".equals(babelLibDir)) {
-			env.put("BABEL_LIBDIR", babelLibDir);
+		if (!env.containsKey("BABEL_LIBDIR")) {
+			if ("".equals(babelLibDir)) {
+				this.getLogger().warn("Directory with Open Babel plugin libraries not set, reading/writing of Chemical file formats can be severly impared");
+			} else {
+				env.put("BABEL_LIBDIR", babelLibDir);
+			}
 		}
 		String babelDataDir = preferenceStore.getString(PreferenceConstants.BABEL_DATADIR);
-		if ("".equals(babelDataDir)) {
-			env.put("BABEL_DATADIR", babelDataDir);
+		if (!env.containsKey("BABEL_DATADIR")) {
+			if ("".equals(babelDataDir)) {
+				this.getLogger().info("Directory with Open Babel data files not set, falling back to Open Babel default data directory");
+			} else {
+				env.put("BABEL_DATADIR", babelDataDir);
+			}
 		}
 		Process process = pb.start();
 		InputStream stdout = process.getInputStream();

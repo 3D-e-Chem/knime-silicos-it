@@ -108,7 +108,7 @@ public class ExecuteNode extends NodeModel {
 					silicositBinDir,
 					config.program.getStringValue()
 			).getCanonicalPath();
-			this.getLogger().warn("Directory with Silicos-it binaries: " + silicositBinDir + " - " + executable);
+			this.getLogger().debug("Directory with Silicos-it binaries: " + silicositBinDir + " - " + executable);
 		}
 		commands.add(executable);
 		for (String argument : arguments) {
@@ -120,7 +120,7 @@ public class ExecuteNode extends NodeModel {
 		String babelLibDir = preferenceStore.getString(PreferenceConstants.BABEL_LIBDIR);
 		if (!env.containsKey("BABEL_LIBDIR")) {
 			if ("".equals(babelLibDir)) {
-				this.getLogger().warn("Directory with Open Babel plugin libraries not set, reading/writing of Chemical file formats can be severly impared");
+				this.getLogger().info("Directory with Open Babel plugin libraries not set, reading/writing of Chemical file formats can be severly impared");
 			} else {
 				env.put("BABEL_LIBDIR", babelLibDir);
 			}

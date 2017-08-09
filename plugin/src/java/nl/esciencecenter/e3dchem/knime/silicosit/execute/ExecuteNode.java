@@ -9,8 +9,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-import org.knime.core.data.DataCell;
-import org.knime.core.data.DataColumnSpec;
+import org.eclipse.jface.preference.IPreferenceStore;
 import org.knime.core.data.DataColumnSpecCreator;
 import org.knime.core.data.DataRow;
 import org.knime.core.data.DataTableSpec;
@@ -99,10 +98,15 @@ public class ExecuteNode extends NodeModel {
 
 	private DataRow process(RowKey rowKey, List<String> arguments) throws IOException, InterruptedException {
 		List<String> commands = new ArrayList<>(arguments.size() + 1);
-		String executable = new File(
-				Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.SILICOSIT_BINDIR),
-				config.program.getStringValue()
-		).getCanonicalPath();
+		IPreferenceStore preferenceStore = Activator.getDefault().getPreferenceStore();
+		String silicositBinDir = preferenceStore.getString(PreferenceConstants.SILICOSIT_BINDIR);
+		String executable = config.program.getStringValue();
+		if (!"".equals(silicositBinDir)) {
+			executable = new File(
+					silicositBinDir,
+					config.program.getStringValue()
+			).getCanonicalPath();
+		}
 		commands.add(executable);
 		for (String argument : arguments) {
 			commands.add(argument);
@@ -110,10 +114,14 @@ public class ExecuteNode extends NodeModel {
 	
 		ProcessBuilder pb = new ProcessBuilder(commands);
 		Map<String, String> env = pb.environment();
-		String babelLibDir = Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.BABEL_LIBDIR);
-		env.put("BABEL_LIBDIR", babelLibDir);
-		String babelDataDir = Activator.getDefault().getPreferenceStore().getString(PreferenceConstants.BABEL_DATADIR);
-		env.put("BABEL_DATADIR", babelDataDir);
+		String babelLibDir = preferenceStore.getString(PreferenceConstants.BABEL_LIBDIR);
+		if ("".equals(babelLibDir)) {
+			env.put("BABEL_LIBDIR", babelLibDir);
+		}
+		String babelDataDir = preferenceStore.getString(PreferenceConstants.BABEL_DATADIR);
+		if ("".equals(babelDataDir)) {
+			env.put("BABEL_DATADIR", babelDataDir);
+		}
 		Process process = pb.start();
 		InputStream stdout = process.getInputStream();
 		InputStream stderr = process.getErrorStream();

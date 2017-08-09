@@ -17,5 +17,6 @@ Require-Bundle: org.eclipse.core.runtime,
 Comment: nl.esciencecenter.e3dchem.knime.silicosit.bin.linux;bundle-version="1.1.0";resolution:=optional
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .
-Export-Package: nl.esciencecenter.e3dchem.knime.silicosit
+Export-Package: nl.esciencecenter.e3dchem.knime.silicosit,
+ nl.esciencecenter.e3dchem.knime.silicosit.preferences
 Bundle-Activator: nl.esciencecenter.e3dchem.knime.silicosit.Activator

@@ -95,6 +95,8 @@ Tests can be executed with `mvn verify`, they will be run in a separate KNIME en
 Test results will be written to `test/target/surefire-reports` directory.
 Code coverage reports (html+xml) can be found in the `tests/target/jacoco/report/` directory.
 
+There are no tests for the meta nodes as they are copied from the plugin to a workflow each time, which would make the test test itself. 
+
 ### Unit tests
 
 Unit tests written in Junit4 format can be put in `tests/src/java`.

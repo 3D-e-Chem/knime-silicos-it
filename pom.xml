@@ -153,5 +153,6 @@
 		<module>p2</module>
 		<module>tests</module>
 		<module>bin.linux</module>
+		<module>bin.windows</module>
     </modules>
 </project>

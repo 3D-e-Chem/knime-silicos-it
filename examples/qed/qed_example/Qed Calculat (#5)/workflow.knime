@@ -17,7 +17,7 @@
 <entry key="annotation-version" type="xint" value="20151123"/>
 <config key="styles"/>
 </config>
-<entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to calculate quantitative estimation of drug-likeness (qed) of a molecule using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/filter-it/1.0.2/strip-it.html&quot;&gt;qed tool&lt;/a&gt;. The qed tool has to be installed with the same Python configured for KNIME.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colum added with the qed measure.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010"/>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to calculate quantitative estimation of drug-likeness (qed) of a molecule using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/biscu-it/qed/1.0.1/qed.html&quot;&gt;qed tool&lt;/a&gt;. The qed tool has to be installed with the same Python configured for KNIME.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colum added with the qed measure.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010"/>
 <entry key="state" type="xstring" value="CONFIGURED"/>
 <config key="workflow_credentials"/>
 <config key="nodes">

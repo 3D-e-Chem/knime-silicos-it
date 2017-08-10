@@ -23,7 +23,7 @@
 <entry key="annotation-version" type="xint" value="20151123"/>
 <config key="styles"/>
 </config>
-<entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to generate scaffolds using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/filter-it/1.0.2/strip-it.html&quot;&gt;strip-it tool&lt;/a&gt;. All scaffold types that strip-it knows will be generated.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colums added containing different scaffold types.%%00010&lt;/p&gt;%%00010"/>
+<entry key="customDescription" type="xstring" value="&lt;p&gt;%%00010Node to generate scaffolds using the &lt;a href=&quot;http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/strip-it/1.0.2/strip-it.html&quot;&gt;strip-it tool&lt;/a&gt;. All scaffold types that strip-it knows will be generated.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The input port should contain molecules in a column called Molecule of type RDKit molecule.%%00010&lt;/p&gt;%%00010&lt;p&gt;%%00010The output port has colums added containing different scaffold types.%%00010&lt;/p&gt;%%00010"/>
 <entry key="state" type="xstring" value="EXECUTED"/>
 <config key="workflow_credentials"/>
 <config key="annotations">

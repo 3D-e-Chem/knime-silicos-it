@@ -5,6 +5,10 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Fixed
+
+* Incorrect URLs in qed, shape-it, and strip-it node descriptions
+
 ## [1.0.1] - 2017-07-21
 
 ### Changed

@@ -7,7 +7,7 @@ Contents of `src/main/resources/`:
 * bin/shape-it
 * bin/strip-it
 * bin/filter-it
-* data/ringtyp.txt, and lots of others files in data/
+* data/ringtyp.txt, and lots of others files in ../plugin/src/main/resources/data/
 * lib/plugins/svgformat.so and lots of other *.so files in lib/plugins/
 * lib/libopenbabel.so.4
 

@@ -3,7 +3,9 @@
       id="nl.esciencecenter.e3dchem.knime.silicosit.feature"
       label="Silicos-it KNIME nodes"
       version="1.0.1.qualifier"
-      provider-name="Netherlands eScience Center">
+      provider-name="Netherlands eScience Center"
+      os="linux,macosx"
+      arch="x86_64">
 
    <description url="https://github.com/3D-e-Chem/knime-silicos-it">
       Silicos-it nodes for filter-it, strip-it, align-it, shape-it and qed tools.
@@ -236,7 +238,15 @@ http://www.apache.org/licenses/
          download-size="0"
          install-size="0"
          version="0.0.0"
-         unpack="true"
+         fragment="true"/>
+
+   <plugin
+         id="nl.esciencecenter.e3dchem.knime.silicosit.bin.macosx"
+         os="macosx"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
          fragment="true"/>
 
 </feature>

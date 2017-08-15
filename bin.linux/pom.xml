@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>nl.esciencecenter.e3dchem.knime.silicosit</groupId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.1.0-SNAPSHOT</version>
     <artifactId>nl.esciencecenter.e3dchem.knime.silicosit</artifactId>
   </parent>
   <artifactId>nl.esciencecenter.e3dchem.knime.silicosit.bin.linux</artifactId>

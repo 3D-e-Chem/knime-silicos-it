@@ -5,6 +5,8 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.1.0] - 2017-08-15
+
 ### Added
 
 * Bundle silicos-it binaries for 64bit Linux and MacOSX. (#4)

@@ -1,4 +1,4 @@
-The Mac OSX executables have been copied out of the https://hub.docker.com/r/3dechem/silicos-it:x86_64-apple-darwin Docker image.
+The Mac OSX executables have been copied out of the https://github.com/3D-e-Chem/docker-silicos-it/tree/master/x86_64-apple-darwin Docker image.
 The Docker image get the source tarballs from http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/software.html .
 
 Get binaries from Docker image:

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KNIME nodes for Silicos-it software, Mac OSX binaries
+Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.silicosit.bin.macosx;singleton:=true
+Bundle-Version: 1.0.1.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: Netherlands eScience Center
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Eclipse-BundleShape: dir
+Eclipse-PlatformFilter: (& (osgi.arch=x86_64) (osgi.os=macosx))
+Fragment-Host: nl.esciencecenter.e3dchem.knime.silicosit.plugin

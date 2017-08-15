@@ -111,7 +111,22 @@
 					<useUIHarness>true</useUIHarness>
 					<useUIThread>${custom.UIThread}</useUIThread>
 				</configuration>
-
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tycho.version}</version>
+				<configuration>
+					<dependency-resolution>
+						<extraRequirements>
+							<requirement>
+								<type>eclipse-feature</type>
+								<id>nl.esciencecenter.e3dchem.knime.silicosit.feature</id>
+								<versionRange>0.0.0</versionRange>
+							</requirement>
+						</extraRequirements>
+					</dependency-resolution>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

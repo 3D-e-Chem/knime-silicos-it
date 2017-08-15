@@ -5,6 +5,10 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+### Added
+
+* Bundle silicos-it binaries for 64bit Linux and MacOSX. (#4)
+
 ### Fixed
 
 * Incorrect URLs in qed, shape-it, and strip-it node descriptions

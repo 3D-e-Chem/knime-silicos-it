@@ -1,0 +1,5 @@
+instructions.install=\
+    org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:bin/align-it,permissions:755);\
+    org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:bin/filter-it,permissions:755);\
+    org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:bin/shape-it,permissions:755);\
+    org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:bin/strip-it,permissions:755);

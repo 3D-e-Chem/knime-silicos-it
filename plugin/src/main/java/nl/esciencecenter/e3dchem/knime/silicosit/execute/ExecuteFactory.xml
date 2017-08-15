@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="../default.png" type="Other" xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>Silicos-it executor</name>
+    
+    <shortDescription>
+        Executes a Silicos-it program
+    </shortDescription>
+    
+    <fullDescription>
+        <intro>Node to execute a <a href="http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html">Silicos-it</a> program.
+        <p>This node should not be called directly, but is called in the other Silicos-it metanodes.</p>
+        
+        <p>The Silicos-it programs are bundled with this node, the location of the programs can be changed in the Preferences.</p>
+        <p>Source code for Silicos-it node is available on <a href="https://github.com/3D-e-Chem/knime-silicosit/">GitHub</a>.</p>
+        </intro>
+        
+         <option name="Program">Which Silicos-it program to run</option>
+         <option name="Arguments">Column with program arguments</option>
+    </fullDescription>
+    
+    <ports>
+    	<inPort index="0" name="Arguments">Input table with arguments column</inPort>
+        <outPort index="0" name="Silicos-it program output">Output table with exit value, standard output and standard error columns</outPort>
+    </ports>    
+</knimeNode>

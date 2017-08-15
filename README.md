@@ -3,7 +3,6 @@
 KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore.
 
 [![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
-[![Build status Windows](https://ci.appveyor.com/api/projects/status/g7lqok1s6t6b2ydk/branch/master?svg=true)](https://ci.appveyor.com/project/3D-e-Chem/knime-silicos-it/branch/master)
 [![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 [![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 [![DOI](https://zenodo.org/badge/88729000.svg)](https://zenodo.org/badge/latestdoi/88729000)
@@ -76,12 +75,26 @@ Steps to get development environment setup:
 
 During import the Tycho Eclipse providers must be installed.
 
+## Meta nodes
+
+This plugin uses metanodes as it's public nodes. The are created in the following way:
+
+1. The meta nodes are first created and tested inside the example workflows in the `examples/` directory.
+2. The `name` and `customDescription` field inside `examples/**/workflow.knime` is filled.
+3. The examples are fully run and committed
+4. The meta nodes are internally completely reset, so we don't ship public nodes with example data in them.
+5. The meta nodes from the example workflows are then copied to the `plugin/src/knime/` directory.
+6. The meta nodes are added to the `plugin/plugin.xml` as PersistedMetaNode in the `org.knime.workbench.repository.metanode` extension.
+7. The examples are checked-out to their fully run state.
+
 ## Tests
 
 Tests for the node are in `tests/src` directory.
 Tests can be executed with `mvn verify`, they will be run in a separate KNIME environment.
 Test results will be written to `test/target/surefire-reports` directory.
 Code coverage reports (html+xml) can be found in the `tests/target/jacoco/report/` directory.
+
+There are no tests for the meta nodes as they are copied from the plugin to a workflow each time, which would make the test test itself. 
 
 ### Unit tests
 

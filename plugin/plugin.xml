@@ -27,7 +27,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/align-it.png"
              id="align-it"
              name="align-it"
-             workflowDir="src/knime/align-it/">
+             workflowDir="src/main/knime/align-it/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -36,7 +36,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/align-it.png"
              id="align-it-phar"
              name="align-it: Pharmacophore generator"
-             workflowDir="src/knime/align-it-phar/">
+             workflowDir="src/main/knime/align-it-phar/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -45,7 +45,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/filter-it.png"
              id="filter-it"
              name="filter-it"
-             workflowDir="src/knime/filter-it/">
+             workflowDir="src/main/knime/filter-it/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -54,7 +54,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/filter-it.png"
              id="filter-it-props"
              name="filter-it: Property calculator"
-             workflowDir="src/knime/filter-it-props/">
+             workflowDir="src/main/knime/filter-it-props/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -63,7 +63,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/biscu-it.png"
              id="qed"
              name="Qed Calculator"
-             workflowDir="src/knime/qed/">
+             workflowDir="src/main/knime/qed/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -72,7 +72,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/shape-it.png"
              id="shape-it"
              name="shape-it"
-             workflowDir="src/knime/shape-it/">
+             workflowDir="src/main/knime/shape-it/">
        </PersistedMetaNode>
        <PersistedMetaNode
              category-path="/community/3d-e-chem/silicos-it"
@@ -81,7 +81,7 @@
              icon="nl/esciencecenter/e3dchem/knime/silicosit/strip-it.png"
              id="strip-it"
              name="strip-it"
-             workflowDir="src/knime/strip-it/">
+             workflowDir="src/main/knime/strip-it/">
        </PersistedMetaNode>
     </extension>
     <extension

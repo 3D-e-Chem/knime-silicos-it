@@ -10,8 +10,8 @@
 <entry key="array-size" type="xint" value="1"/>
 <entry key="0" type="xstring" value="file:/vagrant/H1_cpds.sdf"/>
 </config>
-<entry key="useRowID" type="xboolean" value="false"/>
-<entry key="extractName" type="xboolean" value="true"/>
+<entry key="useRowID" type="xboolean" value="true"/>
+<entry key="extractName" type="xboolean" value="false"/>
 <entry key="extractSDF" type="xboolean" value="true"/>
 <entry key="extractMol" type="xboolean" value="false"/>
 <entry key="extractCTab" type="xboolean" value="false"/>

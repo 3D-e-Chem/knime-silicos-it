@@ -8,6 +8,7 @@ The file is formatted as described on http://keepachangelog.com/.
 ### Fixed
 
 * Metanodes not found
+* Shape-it SDF reader mol name as row id (#5) 
 
 ## [1.1.0] - 2017-08-15
 

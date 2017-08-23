@@ -14,7 +14,6 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 Requirements:
 
 * KNIME, https://www.knime.org, version 3.3 or higher
-* Silicos-it software, http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/software/software.html, command line tools should be in PATH
 
 Steps to get the Silicos-it KNIME node inside KNIME:
 
@@ -47,10 +46,9 @@ The update site can be used to perform a local installation.
 
 ## Continuous Integration
 
-Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) and Windows (AppVeyor) are present.
+Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) are present.
 
 See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull request.
-See `./appveyor.yml` file how to run on https://www.appveyor.com .
 
 # Development
 
@@ -69,7 +67,7 @@ Steps to get development environment setup:
     6. Select `Splash & node category for 3D-e-Chem KNIME nodes`
     7. Select `KNIME Base Chemistry Types & Nodes`
     8. Select `KNIME Python Integration`
-    7. Install software & restart
+    9. Install software & restart
 
 5. Import this repo as an Existing Maven project
 
@@ -119,7 +117,7 @@ This can be skipped by running maven offline using `mvn -o`.
   1. Make clone of an update site repo
   2. Append release to the update site with `mvn install -Dtarget.update.site=<path to update site>`
 6. Commit and push changes in this repo and update site repo.
-7. Create a Github release
+7. Create a GitHub release
 8. Update Zenodo entry
   1. Correct authors
   2. Correct license

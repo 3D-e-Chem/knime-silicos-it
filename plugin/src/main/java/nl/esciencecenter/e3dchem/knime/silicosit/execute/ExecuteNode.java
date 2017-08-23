@@ -2,7 +2,6 @@ package nl.esciencecenter.e3dchem.knime.silicosit.execute;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -134,14 +133,23 @@ public class ExecuteNode extends NodeModel {
 			}
 		}
 		Process process = pb.start();
-		InputStream stdout = process.getInputStream();
-		InputStream stderr = process.getErrorStream();
+        StreamCollector stdout = new StreamCollector(process.getInputStream());
+        Thread stdoutT = new Thread(stdout);
+        stdoutT.start();
+        StreamCollector stderr = new StreamCollector(process.getErrorStream());
+        Thread stderrT = new Thread(stderr);
+        stderrT.start();
+
 		int exitValue = process.waitFor();
 		if (exitValue != 0) {
 			setWarningMessage("Some rows failed to execute correctly");
 		}
+        stdoutT.join();
+        stderrT.join();
+
 		StringCellFactory factory = new StringCell.StringCellFactory();
-		return new DefaultRow(rowKey, new IntCell(exitValue), factory.createCell(stdout), factory.createCell(stderr));
+        return new DefaultRow(rowKey, new IntCell(exitValue), factory.createCell(stdout.getContent()),
+                factory.createCell(stderr.getContent()));
 	}
 
 	private DataTableSpec createOutputSpec() {

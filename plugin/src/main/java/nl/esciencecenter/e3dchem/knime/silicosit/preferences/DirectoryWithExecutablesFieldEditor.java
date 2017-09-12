@@ -32,7 +32,11 @@ public class DirectoryWithExecutablesFieldEditor extends DirectoryFieldEditor {
             // don't check executables when field is invalid
             return isValid;
         }
-        File dir = new File(getStringValue());
+        String value = getStringValue();
+        if (value.equals("")) {
+            return true;
+        }
+        File dir = new File(value);
         isValid = executables.stream().map(e -> new File(dir, e)).allMatch(c -> c.canExecute());
         if (!isValid) {
             setErrorMessage(String.format("Could not find all executables (%s) in directory",

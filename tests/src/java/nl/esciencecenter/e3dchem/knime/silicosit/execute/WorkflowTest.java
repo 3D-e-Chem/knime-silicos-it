@@ -47,7 +47,6 @@ public class WorkflowTest {
 		if (!isWindows()) {
 			Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 			File binDir = new File(FileLocator.toFileURL(FileLocator.find(bundle, new Path("bin"), null)).getPath());
-			System.err.println(binDir);
 			new File(binDir, "align-it").setExecutable(true);
 			new File(binDir, "filter-it").setExecutable(true);
 			new File(binDir, "strip-it").setExecutable(true);

@@ -109,7 +109,7 @@
 				<configuration>
 					<argLine>${tycho.testArgLine} ${tycho.test.jvmArgs}</argLine>
 					<useUIHarness>true</useUIHarness>
-					<useUIThread>${custom.UIThread}</useUIThread>
+					<useUIThread>false</useUIThread>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -133,7 +133,6 @@
 	<properties>
 		<!-- kill test JVM if tests take more than 1 minute (60 seconds) to finish -->
 		<surefire.timeout>60</surefire.timeout>
-		<custom.UIThread>true</custom.UIThread>
 		<sonar.skip>true</sonar.skip>
 	</properties>
 	<profiles>
@@ -147,7 +146,6 @@
 			</activation>
 			<properties>
 				<tycho.test.jvmArgs>-XstartOnFirstThread</tycho.test.jvmArgs>
-				<custom.UIThread>false</custom.UIThread>
 			</properties>
 			<build>
 			</build>

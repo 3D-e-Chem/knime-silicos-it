@@ -8,6 +8,9 @@ Require-Bundle: org.junit;bundle-version="4.12.0",
  org.knime.core;bundle-version="[3.3.0,4.0.0)",
  org.knime.base;bundle-version="[3.3.0,4.0.0)",
  org.knime.testing;bundle-version="[3.3.0,4.0.0)",
+ org.eclipse.ui;bundle-version="3.108.0",
+ org.eclipse.swtbot.eclipse.finder;bundle-version="2.6.0",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.6.0",
  nl.esciencecenter.e3dchem.knime.testing.plugin;bundle-version="[1.0.0,2.0.0)",
  nl.esciencecenter.e3dchem.knime.silicosit.plugin
 Bundle-Vendor: Netherlands eScience Center

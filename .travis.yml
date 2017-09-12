@@ -7,8 +7,16 @@ matrix:
  include:
  - os: linux
    jdk: oraclejdk8
+   addons:
+    apt:
+      packages:
+      - metacity
+   env: DISPLAY=:99.0
    script: 
-   - xvfb-run mvn verify -B
+   - Xvfb :5009 &
+   - export DISPLAY=:5009
+   - metacity --sm-disable --replace 2> metacity.err
+   - mvn verify -B
    - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
  - os: osx
    osx_image: xcode8.2

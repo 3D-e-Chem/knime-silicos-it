@@ -1,6 +1,7 @@
 package nl.esciencecenter.e3dchem.knime.silicosit.preferences;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assume.assumeFalse;
 
 import org.eclipse.swtbot.eclipse.finder.SWTWorkbenchBot;
 import org.eclipse.swtbot.swt.finder.junit.SWTBotJunit4ClassRunner;
@@ -17,6 +18,7 @@ public class PreferencePageTest {
 
     @BeforeClass
     public static void setUp() {
+        assumeFalse("Does not work on Mac", System.getProperty("os.name").contains("Mac"));
         bot = new SWTWorkbenchBot();
     }
 

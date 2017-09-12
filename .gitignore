@@ -12,3 +12,6 @@ hs_err_pid*
 .project
 target
 .classpath
+
+# Swtbot screenshots
+tests/screenshots/

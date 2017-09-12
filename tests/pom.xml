@@ -81,7 +81,7 @@
 															<fileset dir="${source-location}/plugin/target/classes" />
 														</classfiles>
 														<sourcefiles encoding="UTF-8">
-															<fileset dir="${source-location}/plugin/src/java" />
+															<fileset dir="${source-location}/plugin/src/main/java" />
 														</sourcefiles>
 													</structure>
 													<html destdir="${project.basedir}/target/jacoco/report" />

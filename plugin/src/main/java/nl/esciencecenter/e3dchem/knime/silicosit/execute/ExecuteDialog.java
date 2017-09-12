@@ -13,8 +13,9 @@ public class ExecuteDialog extends DefaultNodeSettingsPane {
 		
 		ExecuteConfig config = new ExecuteConfig();
 		
-		addDialogComponent(new DialogComponentStringSelection(config.program, "Program", ExecuteConfig.PROGRAMS));
-		addDialogComponent(new DialogComponentColumnNameSelection(config.argumentsColumn, "Column with arguments",  0, ListDataValue.class));
+        addDialogComponent(new DialogComponentStringSelection(config.getProgram(), "Program", ExecuteConfig.PROGRAMS));
+        addDialogComponent(new DialogComponentColumnNameSelection(config.getArgumentsColumn(), "Column with arguments", 0,
+                ListDataValue.class));
 	}
 
 }

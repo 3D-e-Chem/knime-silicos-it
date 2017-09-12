@@ -6,6 +6,7 @@ import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPreferencePage;
 
 import nl.esciencecenter.e3dchem.knime.silicosit.Activator;
+import nl.esciencecenter.e3dchem.knime.silicosit.execute.ExecuteConfig;
 
 public class PreferencePage
 	extends FieldEditorPreferencePage
@@ -18,9 +19,8 @@ public class PreferencePage
 	 * restore itself.
 	 */
 	public void createFieldEditors() {
-		addField(new DirectoryFieldEditor(PreferenceConstants.SILICOSIT_BINDIR, 
-				"Directory with Silicos-it binaries:", getFieldEditorParent()));
-		// TODO validate SILICOSIT_BINDIR contains binaries
+        addField(new DirectoryWithExecutablesFieldEditor(PreferenceConstants.SILICOSIT_BINDIR,
+                "Directory with Silicos-it binaries:", getFieldEditorParent(), ExecuteConfig.PROGRAMS));
 		addField(new DirectoryFieldEditor(PreferenceConstants.BABEL_LIBDIR, 
 				"Directory with Open Babel plugin libraries:", getFieldEditorParent()));
 		addField(new DirectoryFieldEditor(PreferenceConstants.BABEL_DATADIR, 

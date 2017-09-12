@@ -74,7 +74,7 @@ public class ExecuteNode extends NodeModel {
 	protected BufferedDataTable[] execute(BufferedDataTable[] inData, ExecutionContext exec) throws Exception {
 		BufferedDataTable inTable = inData[0];
 		DataTableSpec inSpec = inTable.getSpec();
-		int argumentsIndex = inSpec.findColumnIndex(config.argumentsColumn.getStringValue());
+        int argumentsIndex = inSpec.findColumnIndex(config.getArgumentsColumnValue());
 		BufferedDataContainer container = exec.createDataContainer(createOutputSpec());
 		long rowCount = inTable.size();
 		long currentRow = 0;
@@ -99,13 +99,13 @@ public class ExecuteNode extends NodeModel {
 		List<String> commands = new ArrayList<>(arguments.size() + 1);
 		IPreferenceStore preferenceStore = Activator.getDefault().getPreferenceStore();
 		String silicositBinDir = preferenceStore.getString(PreferenceConstants.SILICOSIT_BINDIR);
-		String executable = config.program.getStringValue();
+        String executable = config.getProgramValue();
 		if ("".equals(silicositBinDir)) {
 			this.getLogger().warn("Directory with Silicos-it binaries not set, expecting binaries to be in PATH");
 		} else {
 			executable = new File(
 					silicositBinDir,
-					config.program.getStringValue()
+                    config.getProgramValue()
 			).getCanonicalPath();
 			this.getLogger().debug("Directory with Silicos-it binaries: " + silicositBinDir + " - " + executable);
 		}

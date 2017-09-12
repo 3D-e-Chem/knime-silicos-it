@@ -4,6 +4,9 @@ package nl.esciencecenter.e3dchem.knime.silicosit.preferences;
  * Constant definitions for plug-in preferences
  */
 public class PreferenceConstants {
+    private PreferenceConstants() {
+        throw new IllegalStateException("Utility class");
+    }
 
 	public static final String BABEL_LIBDIR = "BABEL_LIBDIR";
 

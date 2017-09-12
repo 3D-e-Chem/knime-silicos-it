@@ -11,13 +11,13 @@ matrix:
     apt:
       packages:
       - metacity
-   env: DISPLAY=:99.0
+   env: DISPLAY=:5009
    script: 
-   - export DISPLAY=:5009
-   - "sh -e /etc/init.d/xvfb start"
+   - Xvfb :5009 &
    - metacity --sm-disable --replace 2> metacity.err &
    - mvn verify -B
    - mvn sonar:sonar -Dsonar.login=$SONAR_TOKEN
+   - cat 
  - os: osx
    osx_image: xcode8.3
    script: Xvfb :5009 & export DISPLAY=:5009 && mvn verify -B

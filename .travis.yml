@@ -12,7 +12,7 @@ matrix:
       packages:
       - metacity
    env: DISPLAY=:5009
-   script: 
+   script:
    - Xvfb :5009 &
    - metacity --sm-disable &
    - mvn verify -B
@@ -29,4 +29,3 @@ cache:
    - $HOME/.m2
    - $HOME/.sonar/cache
 install: mvn package -B
-

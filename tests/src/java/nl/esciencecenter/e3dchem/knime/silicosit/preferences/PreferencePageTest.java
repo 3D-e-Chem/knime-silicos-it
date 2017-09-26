@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(SWTBotJunit4ClassRunner.class)
 public class PreferencePageTest {
-    private static SWTWorkbenchBot bot;
+    private static SWTWorkbenchBot bot = null;
 
     @BeforeClass
     public static void setUp() {
@@ -24,7 +24,9 @@ public class PreferencePageTest {
 
     @AfterClass
     public static void sleep() {
-        bot.closeAllShells();
+        if (bot != null) {
+            bot.closeAllShells();
+        }
     }
 
     @Test

@@ -5,6 +5,8 @@ The file is formatted as described on http://keepachangelog.com/.
 
 ## [Unreleased]
 
+## [1.1.1] - 2017-09-26
+
 ### Fixed
 
 * Metanodes not found

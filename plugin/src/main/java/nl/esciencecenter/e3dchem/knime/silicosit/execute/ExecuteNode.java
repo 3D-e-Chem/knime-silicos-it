@@ -83,7 +83,7 @@ public class ExecuteNode extends NodeModel {
 			List<String> arguments = StreamSupport
 					.stream(argumentsCell.spliterator(), false)
 					.map(c -> ((StringCell) c).getStringValue()).collect(Collectors.toList());
-			DataRow row = process(inRow.getKey(), arguments);
+            DataRow row = process(inRow.getKey(), arguments);
 			container.addRowToTable(row);
 			exec.checkCanceled();
 			exec.setProgress(0.9 * currentRow / rowCount, " processing row " + currentRow);
@@ -95,7 +95,8 @@ public class ExecuteNode extends NodeModel {
 		return new BufferedDataTable[] { out };
 	}
 
-	private DataRow process(RowKey rowKey, List<String> arguments) throws IOException, InterruptedException {
+    private DataRow process(RowKey rowKey, List<String> arguments)
+            throws IOException, InterruptedException {
 		List<String> commands = new ArrayList<>(arguments.size() + 1);
 		IPreferenceStore preferenceStore = Activator.getDefault().getPreferenceStore();
 		String silicositBinDir = preferenceStore.getString(PreferenceConstants.SILICOSIT_BINDIR);
@@ -139,8 +140,13 @@ public class ExecuteNode extends NodeModel {
         StreamCollector stderr = new StreamCollector(process.getErrorStream());
         Thread stderrT = new Thread(stderr);
         stderrT.start();
-
-		int exitValue = process.waitFor();
+        try {
+            process.waitFor();
+        } catch (InterruptedException e) {
+            process.destroy();
+            throw e;
+        }
+        int exitValue = process.exitValue();
 		if (exitValue != 0) {
 			setWarningMessage("Some rows failed to execute correctly");
 		}

@@ -5,7 +5,7 @@ KNIME nodes and example workflows for software made by [Silicos-it](http://silic
 [![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
 [![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
 [![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
-[![DOI](https://zenodo.org/badge/88729000.svg)](https://zenodo.org/badge/latestdoi/88729000)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597793.svg)](https://doi.org/10.5281/zenodo.597793)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
 

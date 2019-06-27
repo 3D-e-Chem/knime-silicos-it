@@ -64,7 +64,7 @@ During import the Tycho Eclipse providers must be installed.
 
 ## Meta nodes
 
-This plugin uses metanodes as it's public nodes. The are created in the following way:
+This plugin uses metanodes as it's public nodes. They are created in the following way:
 
 1. The meta nodes are first created and tested inside the example workflows in the `examples/` directory.
 2. The `name` and `customDescription` field inside `examples/**/workflow.knime` is filled.
@@ -109,6 +109,5 @@ This can be skipped by running maven offline using `mvn -o`.
 7. Create a GitHub release
 8. Update Zenodo entry
   1. Correct authors
-  2. Correct license
 9. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
-
+10. Update CITIATION.cff with new DOI

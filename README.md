@@ -3,8 +3,8 @@
 KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore.
 
 [![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
-[![SonarQube Gate](https://sonarqube.com/api/badges/gate?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)](https://sonarqube.com/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
-[![SonarQube Coverage](https://sonarqube.com/api/badges/measure?key=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarqube.com/component_measures/domain/Coverage?id=nl.esciencecenter.e3dchem.knime.silicosit:nl.esciencecenter.e3dchem.knime.silicosit)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597793.svg)](https://doi.org/10.5281/zenodo.597793)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
@@ -13,7 +13,7 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 3.3 or higher
+* KNIME, https://www.knime.org, version 4.0 or higher
 
 Steps to get the Silicos-it KNIME node inside KNIME:
 
@@ -52,24 +52,13 @@ See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull
 
 # Development
 
-Steps to get development environment setup:
+Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Download KNIME SDK from https://www.knime.org/downloads/overview
-2. Install/Extract/start KNIME SDK
-3. Start SDK
-4. Install m2e (Maven integration for Eclipse) + Test workflows in JUnit + Chem base + Python
-
-    1. Goto Help > Install new software ...
-    2. Make sure Update site http://update.knime.org/analytics-platform/3.3 and https://3d-e-chem.github.io/updates are in the pull down list otherwise add them
-    3. Select --all sites-- in work with pulldown
-    4. Select m2e (Maven integration for Eclipse)
-    5. Select `Test Knime workflows from a Junit test`
-    6. Select `Splash & node category for 3D-e-Chem KNIME nodes`
-    7. Select `KNIME Base Chemistry Types & Nodes`
-    8. Select `KNIME Python Integration`
-    9. Install software & restart
-
-5. Import this repo as an Existing Maven project
+1. Install Java 8
+2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
+3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+4. Import this repo as an Existing Maven project
+5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (4.0) - nl.esciencecenter.e3dchem.knime.silicosit.targetplatform/KNIME-AP-4.0.target` target definition.
 
 During import the Tycho Eclipse providers must be installed.
 

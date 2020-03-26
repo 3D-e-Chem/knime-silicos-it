@@ -1,6 +1,6 @@
 # knime-silicosit
 
-KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore.
+KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore. Nodes can only be run on either Linux or OSX. The Silicos-it Windows binaries do not exist so the Silicos-it KNIME nodes are not available for WIndows aswell.
 
 [![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit)

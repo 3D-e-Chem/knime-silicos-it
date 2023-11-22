@@ -2,9 +2,9 @@
 
 KNIME nodes and example workflows for software made by [Silicos-it](http://silicos-it.be.s3-website-eu-west-1.amazonaws.com/index.html) like shape-it to align molecules based on shape and align-it to align molecules based on their pharmacophore. Nodes can only be run on either Linux or OSX. The Silicos-it Windows binaries do not exist so the Silicos-it KNIME nodes are not available for WIndows aswell.
 
-[![Build Status Linux & OSX](https://travis-ci.org/3D-e-Chem/knime-silicos-it.svg?branch=master)](https://travis-ci.org/3D-e-Chem/knime-silicos-it)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit&metric=alert_status)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit&metric=coverage)](https://sonarcloud.io/dashboard?id=nl.esciencecenter.e3dchem.knime.silicosit%3Anl.esciencecenter.e3dchem.knime.silicosit)
+[![Java CI with Maven](https://github.com/3D-e-Chem/knime-silicos-it/actions/workflows/build.yml/badge.svg)](https://github.com/3D-e-Chem/knime-silicos-it/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=3D-e-Chem_knime-silicos-it&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=3D-e-Chem_knime-silicos-it)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=3D-e-Chem_knime-silicos-it&metric=coverage)](https://sonarcloud.io/summary/new_code?id=3D-e-Chem_knime-silicos-it)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597793.svg)](https://doi.org/10.5281/zenodo.597793)
 
 This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform build steps.
@@ -13,13 +13,13 @@ This project uses [Eclipse Tycho](https://www.eclipse.org/tycho/) to perform bui
 
 Requirements:
 
-* KNIME, https://www.knime.org, version 4.0 or higher
+* KNIME, https://www.knime.org, version 5.1 or higher
 
 Steps to get the Silicos-it KNIME node inside KNIME:
 
 1. Goto Help > Install new software ... menu
 2. Press add button
-3. Fill text fields with `https://3d-e-chem.github.io/updates`
+3. Fill text fields with `https://3d-e-chem.github.io/updates/5.1`
 4. Select --all sites-- in `work with` pulldown
 5. Select the node
 6. Install software
@@ -46,19 +46,17 @@ The update site can be used to perform a local installation.
 
 ## Continuous Integration
 
-Configuration files to run Continuous Integration builds on Linux (Travis-CI), OS X (Travis-CI) are present.
-
-See `./.travis.yml` file how to trigger a Travis-CI build for every push or pull request.
+Configuration files to run Continuous Integration builds on GitHub actions are present in `.github/workflows`.
 
 # Development
 
 Steps to get development environment setup based on https://github.com/knime/knime-sdk-setup#sdk-setup:
 
-1. Install Java 8
-2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/release/2018-12/r/eclipse-ide-rcp-and-rap-developers)
-3. Configure Java 8 inside Eclipse Window > Preferences > Java > Installed JREs
+1. Install Java 17
+2. Install Eclipse for [RCP and RAP developers](https://www.eclipse.org/downloads/packages/installer)
+3. Configure Java 17 inside Eclipse Window > Preferences > Java > Installed JREs
 4. Import this repo as an Existing Maven project
-5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (4.0) - nl.esciencecenter.e3dchem.knime.silicosit.targetplatform/KNIME-AP-4.0.target` target definition.
+5. Activate target platform by going to Window > Preferences > Plug-in Development > Target Platform and check the `KNIME Analytics Platform (5.1) - nl.esciencecenter.e3dchem.knime.silicosit.targetplatform/KNIME-AP-5.1.target` target definition.
 
 During import the Tycho Eclipse providers must be installed.
 
@@ -110,4 +108,4 @@ This can be skipped by running maven offline using `mvn -o`.
 8. Update Zenodo entry
   1. Correct authors
 9. Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
-10. Update CITIATION.cff with new DOI
+10. Update CITATION.cff with new DOI

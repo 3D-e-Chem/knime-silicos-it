@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: KNIME nodes for Silicos-it software, Linux binaries
 Bundle-SymbolicName: nl.esciencecenter.e3dchem.knime.silicosit.bin.linux;singleton:=true
-Bundle-Version: 1.1.3.qualifier
+Bundle-Version: 1.1.4.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: Netherlands eScience Center
 Bundle-ActivationPolicy: lazy
